@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台灣中古車上架比與下架速度</title>
+  <meta name="description" content="以 8891 在架數對公路局小客車掛牌數計算各品牌上架比，並以下架暫定為銷售觀察流動速度。兩個指標都是代理值，不是官方週轉率。">
+  <meta name="theme-color" content="#111214">
+  <style>
+    :root {
+      --bg: #111214;
+      --bg-elev: #18191d;
+      --card: #1c1d22;
+      --line: #2e2f36;
+      --text: #f3efe6;
+      --muted: #9c978c;
+      --accent: #e6313c;
+      --accent-soft: rgba(230, 49, 60, 0.14);
+      --good: #3fa66b;
+      --warn: #c9a227;
+      --porsche: #e6313c;
+      --radius: 14px;
+      --shadow: 0 8px 28px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: "Noto Sans TC", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", system-ui, sans-serif;
+      line-height: 1.55;
+      font-size: 16px;
+      min-height: 100vh;
+    }
+    a { color: inherit; }
+    a[href^="http"] { color: #f0c9cb; text-underline-offset: 3px; }
+    header {
+      padding: 28px 20px 18px;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(1200px 280px at 10% -20%, var(--accent-soft), transparent 60%),
+        var(--bg);
+    }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 64px; }
+    .kicker { color: var(--accent); letter-spacing: .16em; font-size: 12px; font-weight: 700; text-transform: uppercase; margin: 0 0 8px; }
+    h1 { font-size: clamp(26px, 4vw, 38px); margin: 0 0 8px; letter-spacing: .02em; font-weight: 700; }
+    .lede { color: var(--muted); margin: 0; max-width: 52em; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 14px; color: var(--muted); font-size: 14px; }
+    .meta strong { color: var(--text); font-weight: 600; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 22px 0; }
+    .metric {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 16px 16px 14px; box-shadow: var(--shadow);
+    }
+    .metric .v { font-size: 28px; font-weight: 700; letter-spacing: .01em; line-height: 1.15; }
+    .metric .l { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .metric .d { color: var(--muted); font-size: 12px; margin-top: 6px; }
+    section { margin: 32px 0; }
+    h2 { font-size: 20px; margin: 0 0 6px; }
+    .cap { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+    .callout {
+      background: var(--accent-soft); border: 1px solid rgba(230,49,60,.3);
+      border-radius: var(--radius); padding: 16px 18px; margin: 16px 0 0;
+    }
+    .callout strong { display: block; margin-bottom: 6px; font-size: 17px; }
+    .notes {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 14px 18px; color: var(--muted); font-size: 14px;
+    }
+    .notes li { margin: 6px 0; }
+    .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+    th { color: var(--muted); font-weight: 600; background: var(--bg-elev); position: sticky; top: 0; }
+    th.sortable { cursor: pointer; user-select: none; }
+    th.sortable:hover { color: var(--text); }
+    th.sortable .arrow { margin-left: 4px; opacity: .45; font-size: 11px; }
+    th.sortable.active .arrow { opacity: 1; color: var(--accent); }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.porsche { background: var(--accent-soft); }
+    tr.porsche td:first-child { font-weight: 700; color: #f6d0d2; }
+    tr.market { background: #24262c; font-weight: 600; }
+    tr:last-child td { border-bottom: 0; }
+    .dash { color: var(--muted); }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 0 0 12px; }
+    .select-wrap { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+    .select-wrap select, .search input {
+      appearance: none; border: 1px solid var(--line); background: var(--card);
+      color: var(--text); border-radius: 999px; padding: 8px 14px; font: inherit;
+    }
+    .io-hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 0 0 16px; }
+    .io-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+    .io-card.in { border-color: rgba(63,166,107,.45); }
+    .io-card.out { border-color: rgba(230,49,60,.45); }
+    .io-card .k { color: var(--muted); font-size: 13px; }
+    .io-card .v { font-size: 32px; font-weight: 700; margin-top: 4px; }
+    .chart-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 8px 8px; }
+    .chart-box svg { width: 100%; height: auto; display: block; }
+    .chart-legend { display: flex; gap: 16px; justify-content: center; color: var(--muted); font-size: 13px; margin-top: 6px; }
+    .chart-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+    footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding: 22px 0 40px; }
+    .error { color: #f3b4b8; background: var(--accent-soft); border-radius: var(--radius); padding: 14px 16px; margin: 18px 20px; }
+    @media (max-width: 720px) {
+      .metric .v { font-size: 22px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="padding-bottom:0">
+      <p class="kicker">代理指標 · 非正式週轉率</p>
+      <h1>台灣中古車上架比與下架速度</h1>
+      <p class="lede">用 8891 各品牌在架台數，對上公路局最新月份的小客車掛牌數，算出上架比；並每天比對在架車輛，把下架暫定為銷售，觀察各品牌的流動速度。這兩個數字都不是官方週轉率——公路局沒有公布各品牌過戶數。</p>
+      <div class="meta" id="meta">資料載入中…</div>
+    </div>
+  </header>
+  <div id="error" class="error wrap" hidden></div>
+  <div class="wrap">
+    <section id="summary"></section>
+    <section id="table"></section>
+    <section id="io"></section>
+    <section id="stockChart"></section>
+    <section id="salesChart"></section>
+    <section id="notes"></section>
+    <footer id="foot-meta"></footer>
+  </div>
+  <script>
+    const SALES_LABEL = "銷售（以下架計）";
+    let DATA = null, HISTORY = null;
+    const state = {
+      sortKey: "listings",
+      sortDir: "desc",
+      stockBrand: "all",
+      salesBrand: "all",
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+    }[c]));
+    const fmtN = (n) => (n == null || n === "") ? "—" : Number(n).toLocaleString("zh-TW");
+    const fmtPct = (n, digits = 2) => {
+      if (n == null || Number.isNaN(n)) return "—";
+      return (n * 100).toFixed(digits) + "%";
+    };
+    const fmtDays = (n) => (n == null ? "—" : Number(n).toLocaleString("zh-TW", { maximumFractionDigits: 1 }) + " 天");
+    function capturedLabel(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return iso;
+      return d.toLocaleString("zh-TW", { timeZone: "Asia/Taipei", hour12: false }) + "（台北時間）";
+    }
+
+    function brands() { return (DATA && DATA.brands) || []; }
+    function market() { return (DATA && DATA.market) || {}; }
+    function porsche() { return DATA && DATA.porsche; }
+
+    function renderMeta() {
+      const s = DATA.sources || {};
+      const m = market();
+      $("meta").innerHTML = `
+        <span>資料擷取於 <strong>${esc(capturedLabel(DATA.captured_at))}</strong></span>
+        <span>8891 在架 <strong>${fmtN(m.listings)}</strong> 輛</span>
+        <span>掛牌數截至 <strong>${esc(s.stock_period_label || s.stock_period || "—")}</strong>（${esc(s.stock_scope || "小客車")}）</span>
+        <span>來源：<a href="https://auto.8891.com.tw/search" target="_blank" rel="noopener">8891 中古車</a>、
+        <a href="${esc(s.stock_url || "https://stat.thb.gov.tw/hb01/webMain.aspx?sys=100&funid=1110003")}" target="_blank" rel="noopener">公路局統計查詢網</a></span>`;
+      $("foot-meta").innerHTML = `資料日期：${esc(capturedLabel(DATA.captured_at))}　
+        上架比分母為公路局 ${esc(s.stock_period_label || s.stock_period || "—")} ${esc(s.stock_scope || "小客車")} 登記數。
+        本站只發布加總後的統計，不含逐車名單。`;
+    }
+
+    function renderSummary() {
+      const m = market();
+      const p = porsche();
+      const top = brands()[0];
+      const s = DATA.sources || {};
+      $("summary").innerHTML = `
+        <div class="callout">
+          <strong>這不是官方週轉率</strong>
+          週轉率的分子是過戶數，公路局沒有按品牌公布。上架比看的是「有多少比例的掛牌車輛正在 8891 出售」；
+          下架速度把消失的物件暫定為銷售，要累積數週資料才比較準。
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="v">${fmtN(m.listings)}</div><div class="l">全市場 8891 在架</div><div class="d">上架比 ${fmtPct(m.list_ratio)}</div></div>
+          <div class="metric"><div class="v">${fmtN(m.stock)}</div><div class="l">小客車掛牌數</div><div class="d">${esc(s.stock_period_label || s.stock_period || "—")}${s.stock_cached ? "（沿用已下載版本）" : ""}</div></div>
+          <div class="metric"><div class="v">${p ? fmtN(p.listings) : "—"}</div><div class="l">保時捷在架</div><div class="d">上架比 ${p ? fmtPct(p.list_ratio) : "—"}　掛牌 ${p && p.stock ? fmtN(p.stock) : "—"}</div></div>
+          <div class="metric"><div class="v">${fmtDays(m.avg_days_listed)}</div><div class="l">全市場目前平均在架天數</div><div class="d">依 8891 上架日或首次見到日計算</div></div>
+        </div>
+        <p class="cap">${top ? `目前在架最多的是 ${esc(top.display)} ${fmtN(top.listings)} 輛（上架比 ${fmtPct(top.list_ratio)}）。` : ""}
+          保時捷會在下方表格以紅色列標出。</p>`;
+    }
+
+    function sortedBrands() {
+      const rows = brands().slice();
+      const key = state.sortKey;
+      const dir = state.sortDir === "asc" ? 1 : -1;
+      const val = (r) => {
+        const v = r[key];
+        return v == null ? -Infinity * dir : v;
+      };
+      rows.sort((a, b) => {
+        const va = val(a), vb = val(b);
+        if (va === vb) return (b.listings - a.listings) || a.brand.localeCompare(b.brand, "zh-Hant");
+        return va > vb ? dir : -dir;
+      });
+      return rows;
+    }
+
+    function th(key, label, cls) {
+      const active = state.sortKey === key;
+      const arrow = active ? (state.sortDir === "asc" ? "▲" : "▼") : "▼";
+      return `<th class="sortable num ${cls || ""} ${active ? "active" : ""}" data-key="${esc(key)}">${esc(label)}<span class="arrow">${arrow}</span></th>`;
+    }
+
+    function renderTable() {
+      const rows = sortedBrands();
+      const m = market();
+      const body = rows.map((r) => `
+        <tr class="${r.highlight ? "porsche" : ""}">
+          <td>${esc(r.display)}</td>
+          <td class="num">${fmtN(r.listings)}</td>
+          <td class="num">${r.stock == null ? '<span class="dash">無對應</span>' : fmtN(r.stock)}</td>
+          <td class="num">${r.stock ? fmtPct(r.list_ratio) : '<span class="dash">—</span>'}</td>
+          <td class="num">${fmtN(r.sold)}</td>
+          <td class="num">${r.sold_30d == null ? '<span class="dash">累積中</span>' : fmtN(r.sold_30d)}</td>
+          <td class="num">${r.sell_through_30d == null ? '<span class="dash">累積中</span>' : fmtPct(r.sell_through_30d)}</td>
+          <td class="num">${fmtDays(r.avg_days_listed)}</td>
+          <td class="num">${r.avg_days_to_sell == null ? '<span class="dash">累積中</span>' : fmtDays(r.avg_days_to_sell)}</td>
+        </tr>`).join("");
+      $("table").innerHTML = `
+        <h2>各品牌一覽</h2>
+        <p class="cap">點欄位名稱可排序。全市場列用公路局小客車總計當分母。「無對應」表示公路局該月沒有可合併到這個品牌的掛牌數。「累積中」表示還需要跨日快照才能計算。</p>
+        <div class="table-wrap" style="max-height:720px">
+          <table>
+            <thead>
+              <tr>
+                <th class="sortable ${state.sortKey === "brand" ? "active" : ""}" data-key="brand">品牌<span class="arrow">${state.sortKey === "brand" ? (state.sortDir === "asc" ? "▲" : "▼") : "▼"}</span></th>
+                ${th("listings", "8891 在架")}
+                ${th("stock", "小客車掛牌")}
+                ${th("list_ratio", "上架比")}
+                ${th("sold", "昨日" + SALES_LABEL)}
+                ${th("sold_30d", "近 30 日銷售")}
+                ${th("sell_through_30d", "30 日售出率")}
+                ${th("avg_days_listed", "目前平均在架")}
+                ${th("avg_days_to_sell", "已售平均在架")}
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="market">
+                <td>全市場</td>
+                <td class="num">${fmtN(m.listings)}</td>
+                <td class="num">${fmtN(m.stock)}</td>
+                <td class="num">${fmtPct(m.list_ratio)}</td>
+                <td class="num">${fmtN(m.sold)}</td>
+                <td class="num">${m.sold_30d == null ? '<span class="dash">累積中</span>' : fmtN(m.sold_30d)}</td>
+                <td class="num">${m.sell_through_30d == null ? '<span class="dash">累積中</span>' : fmtPct(m.sell_through_30d)}</td>
+                <td class="num">${fmtDays(m.avg_days_listed)}</td>
+                <td class="num">${m.avg_days_to_sell == null ? '<span class="dash">累積中</span>' : fmtDays(m.avg_days_to_sell)}</td>
+              </tr>
+              ${body}
+            </tbody>
+          </table>
+        </div>
+        <p class="cap" style="margin-top:10px">30 日售出率＝期間內銷售（以下架計）÷ 期間平均在架數。已售平均在架天數只計算已下架的物件。</p>`;
+      $("table").querySelectorAll("th.sortable").forEach((el) => {
+        el.addEventListener("click", () => {
+          const key = el.getAttribute("data-key");
+          if (state.sortKey === key) state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
+          else { state.sortKey = key; state.sortDir = key === "brand" ? "asc" : "desc"; }
+          renderTable();
+        });
+      });
+    }
+
+    function renderIO() {
+      const ch = DATA.changes || {};
+      const hasCompare = !!ch.compared_to;
+      const arrivedN = hasCompare ? (ch.arrived_count || 0) : 0;
+      const goneN = hasCompare ? (ch.gone_count || 0) : 0;
+      const rows = (ch.by_brand || []).slice().sort((a, b) => (b.sold + b.arrived) - (a.sold + a.arrived));
+      const body = rows.map((r) => `
+        <tr class="${r.highlight ? "porsche" : ""}">
+          <td>${esc(r.display)}</td>
+          <td class="num">${fmtN(r.arrived)}</td>
+          <td class="num">${fmtN(r.sold)}</td>
+        </tr>`).join("");
+      $("io").innerHTML = `
+        <h2>昨日進出</h2>
+        <p class="cap">${hasCompare
+          ? `比較前一次快照（${esc(ch.compared_to)}）→ ${esc(DATA.date)}。下架暫定為${esc(SALES_LABEL)}，不一定已經成交或過戶。`
+          : "今天是第一份完整快照，還沒有前一日可以比較，進與銷售（以下架計）先顯示 0。明天更新後才會開始累積。"}</p>
+        <div class="io-hero">
+          <div class="io-card in"><div class="k">新上架</div><div class="v">${fmtN(arrivedN)}</div></div>
+          <div class="io-card out"><div class="k">${esc(SALES_LABEL)}</div><div class="v">${fmtN(goneN)}</div></div>
+        </div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>品牌</th><th class="num">新上架</th><th class="num">${esc(SALES_LABEL)}</th></tr></thead>
+          <tbody>
+            ${body || `<tr><td colspan="3">${hasCompare ? "昨日沒有進出的品牌。" : "尚無比較基準。"}</td></tr>`}
+            <tr class="market"><td>全市場</td><td class="num">${fmtN(arrivedN)}</td><td class="num">${fmtN(goneN)}</td></tr>
+          </tbody>
+        </table></div>`;
+    }
+
+    function brandOptions(selected) {
+      const metas = (HISTORY && HISTORY.brand_meta) || brands().map((b) => ({ brand: b.brand, display: b.display, highlight: b.highlight }));
+      const opts = [["all", "全市場"], ...metas.map((b) => [b.brand, b.display])];
+      return opts.map(([v, l]) => `<option value="${esc(v)}" ${selected === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+    }
+
+    function seriesFor(kind, brand) {
+      const days = (HISTORY && HISTORY.days) || [];
+      if (brand === "all") return days.map((d) => d[kind] == null ? null : d[kind]);
+      const rows = ((HISTORY && HISTORY.brands) || {})[brand] || [];
+      const map = Object.fromEntries(rows.map((r) => [r.date, r]));
+      return days.map((d) => {
+        const r = map[d.date];
+        if (!r || r[kind] == null) return null;
+        return r[kind];
+      });
+    }
+
+    function lineChartSVG(series, dates, { height = 260 } = {}) {
+      const width = 720, padL = 52, padR = 16, padT = 20, padB = 36;
+      const innerW = width - padL - padR, innerH = height - padT - padB;
+      const nums = series.flatMap((s) => s.values.filter((v) => v != null));
+      const yMax = Math.max(4, ...(nums.length ? nums : [0]));
+      const n = dates.length;
+      const xAt = (i) => padL + (n <= 1 ? innerW / 2 : (i / (n - 1)) * innerW);
+      const yAt = (v) => padT + innerH - (v / yMax) * innerH;
+      const ticks = 4;
+      let grid = "";
+      for (let i = 0; i <= ticks; i++) {
+        const val = Math.round(yMax * (i / ticks));
+        const y = yAt(val);
+        grid += `<line x1="${padL}" y1="${y}" x2="${width - padR}" y2="${y}" stroke="#2e2f36" />`;
+        grid += `<text x="${padL - 8}" y="${y + 4}" fill="#9c978c" font-size="11" text-anchor="end">${val.toLocaleString("zh-TW")}</text>`;
+      }
+      const xLabels = dates.map((d, i) =>
+        `<text x="${xAt(i)}" y="${height - 10}" fill="#9c978c" font-size="11" text-anchor="middle">${esc(d.slice(5))}</text>`
+      ).join("");
+      const plots = series.map((s) => {
+        const pts = [];
+        s.values.forEach((v, i) => { if (v != null) pts.push({ i, v }); });
+        if (!pts.length) return "";
+        const path = pts.length >= 2
+          ? `<polyline fill="none" stroke="${s.color}" stroke-width="2.5" points="${pts.map((p) => `${xAt(p.i)},${yAt(p.v)}`).join(" ")}" />`
+          : "";
+        const dots = pts.map((p) =>
+          `<circle cx="${xAt(p.i)}" cy="${yAt(p.v)}" r="5" fill="${s.color}" />
+           <text x="${xAt(p.i)}" y="${yAt(p.v) - 10}" fill="${s.color}" font-size="11" text-anchor="middle">${fmtN(p.v)}</text>`
+        ).join("");
+        return path + dots;
+      }).join("");
+      return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="折線圖">${grid}${xLabels}${plots}</svg>`;
+    }
+
+    function brandCaption(key) {
+      if (key === "all") return "全市場";
+      const row = brands().find((b) => b.brand === key);
+      return row ? row.display : key;
+    }
+
+    function renderCharts() {
+      const days = (HISTORY && HISTORY.days) || [];
+      const dates = days.map((d) => d.date);
+      if (!dates.length) {
+        $("stockChart").innerHTML = `<h2>在架曲線圖</h2><p class="cap">尚無歷史資料。每天更新後會在這裡加一個點。</p>`;
+        $("salesChart").innerHTML = `<h2>銷售曲線圖</h2><p class="cap">尚無歷史資料。第一天沒有前一日快照，進出從第二天開始計算。</p>`;
+        return;
+      }
+      $("stockChart").innerHTML = `
+        <h2>在架曲線圖</h2>
+        <p class="cap">每日 8891 在架台數。目前：${esc(brandCaption(state.stockBrand))}，共 ${fmtN(dates.length)} 個資料日。</p>
+        <div class="toolbar"><label class="select-wrap">品牌
+          <select id="stockBrand">${brandOptions(state.stockBrand)}</select></label></div>
+        <div class="chart-box">${lineChartSVG([{ label: "在架", color: "#e6313c", values: seriesFor("listings", state.stockBrand) }], dates)}</div>`;
+      $("salesChart").innerHTML = `
+        <h2>銷售曲線圖</h2>
+        <p class="cap">每日${esc(SALES_LABEL)}（下架），並以新上架為第二條線。第一天若沒有前一日快照則不計算進出。目前：${esc(brandCaption(state.salesBrand))}。</p>
+        <div class="toolbar"><label class="select-wrap">品牌
+          <select id="salesBrand">${brandOptions(state.salesBrand)}</select></label></div>
+        <div class="chart-box">
+          ${lineChartSVG([
+            { label: SALES_LABEL, color: "#e6313c", values: seriesFor("sold", state.salesBrand) },
+            { label: "新上架", color: "#3fa66b", values: seriesFor("arrived", state.salesBrand) },
+          ], dates)}
+          <div class="chart-legend">
+            <span><i style="background:#e6313c"></i>${esc(SALES_LABEL)}</span>
+            <span><i style="background:#3fa66b"></i>新上架</span>
+          </div>
+        </div>`;
+      const sb = $("stockBrand"), salesb = $("salesBrand");
+      if (sb) sb.addEventListener("change", (e) => { state.stockBrand = e.target.value; renderCharts(); });
+      if (salesb) salesb.addEventListener("change", (e) => { state.salesBrand = e.target.value; renderCharts(); });
+    }
+
+    function renderNotes() {
+      const notes = DATA.notes || [];
+      $("notes").innerHTML = `
+        <h2>資料說明與限制</h2>
+        <ul class="notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>`;
+    }
+
+    function render() {
+      if (!DATA) return;
+      renderMeta();
+      renderSummary();
+      renderTable();
+      renderIO();
+      renderCharts();
+      renderNotes();
+    }
+
+    async function boot() {
+      try {
+        const res = await fetch("data.json?t=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        DATA = await res.json();
+        if (!DATA || !DATA.market) throw new Error("資料格式不正確");
+        try {
+          const hres = await fetch("history.json?t=" + Date.now(), { cache: "no-store" });
+          if (hres.ok) HISTORY = await hres.json();
+        } catch (err) {
+          HISTORY = null;
+        }
+        const n = (DATA.market && DATA.market.listings) || 0;
+        document.title = `台灣中古車上架比與下架速度（${n.toLocaleString("zh-TW")} 輛 · ${DATA.date}）`;
+        render();
+      } catch (err) {
+        $("error").hidden = false;
+        $("error").textContent = "無法載入資料：" + err.message;
+        $("meta").textContent = "資料載入失敗";
+      }
+    }
+    boot();
+  </script>
+</body>
+</html>

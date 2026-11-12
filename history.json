@@ -1,0 +1,1025 @@
+{
+  "updated": "2026-11-12T08:25:43+08:00",
+  "days": [
+    {
+      "date": "2026-11-12",
+      "listings": 39407,
+      "arrived": null,
+      "sold": null
+    }
+  ],
+  "brands": {
+    "Foton": [
+      {
+        "date": "2026-11-12",
+        "listings": 2,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Buick": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "BMW": [
+      {
+        "date": "2026-11-12",
+        "listings": 4702,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Hino": [
+      {
+        "date": "2026-11-12",
+        "listings": 132,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Suzuki": [
+      {
+        "date": "2026-11-12",
+        "listings": 495,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "GMC": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Saab": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Audi": [
+      {
+        "date": "2026-11-12",
+        "listings": 1018,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "BRABUS": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Honda": [
+      {
+        "date": "2026-11-12",
+        "listings": 1719,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "DFSK": [
+      {
+        "date": "2026-11-12",
+        "listings": 40,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Rolls-Royce": [
+      {
+        "date": "2026-11-12",
+        "listings": 59,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Ferrari": [
+      {
+        "date": "2026-11-12",
+        "listings": 123,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Abarth": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "McLaren": [
+      {
+        "date": "2026-11-12",
+        "listings": 46,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Hyundai": [
+      {
+        "date": "2026-11-12",
+        "listings": 1228,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Aston Martin": [
+      {
+        "date": "2026-11-12",
+        "listings": 34,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Lincoln": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Opel": [
+      {
+        "date": "2026-11-12",
+        "listings": 10,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Volkswagen": [
+      {
+        "date": "2026-11-12",
+        "listings": 2199,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Jeep": [
+      {
+        "date": "2026-11-12",
+        "listings": 28,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Lexus": [
+      {
+        "date": "2026-11-12",
+        "listings": 1710,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Mazda": [
+      {
+        "date": "2026-11-12",
+        "listings": 1274,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Isuzu": [
+      {
+        "date": "2026-11-12",
+        "listings": 89,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Cadillac": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Tesla": [
+      {
+        "date": "2026-11-12",
+        "listings": 437,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Chrysler": [
+      {
+        "date": "2026-11-12",
+        "listings": 3,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Lamborghini": [
+      {
+        "date": "2026-11-12",
+        "listings": 118,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Morgan": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Fiat": [
+      {
+        "date": "2026-11-12",
+        "listings": 21,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Jaguar": [
+      {
+        "date": "2026-11-12",
+        "listings": 103,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Volvo": [
+      {
+        "date": "2026-11-12",
+        "listings": 942,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Citroen": [
+      {
+        "date": "2026-11-12",
+        "listings": 28,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Ford": [
+      {
+        "date": "2026-11-12",
+        "listings": 2008,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Skoda": [
+      {
+        "date": "2026-11-12",
+        "listings": 728,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Chevrolet": [
+      {
+        "date": "2026-11-12",
+        "listings": 14,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Proton": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Ineos": [
+      {
+        "date": "2026-11-12",
+        "listings": 2,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Lotus": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Alfa Romeo": [
+      {
+        "date": "2026-11-12",
+        "listings": 32,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Daihatsu": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Renault": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "BYD": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Peugeot": [
+      {
+        "date": "2026-11-12",
+        "listings": 137,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "MG": [
+      {
+        "date": "2026-11-12",
+        "listings": 228,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Mini": [
+      {
+        "date": "2026-11-12",
+        "listings": 507,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Luxgen": [
+      {
+        "date": "2026-11-12",
+        "listings": 447,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Nissan": [
+      {
+        "date": "2026-11-12",
+        "listings": 1569,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Subaru": [
+      {
+        "date": "2026-11-12",
+        "listings": 421,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Ssangyong": [
+      {
+        "date": "2026-11-12",
+        "listings": 3,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Kia": [
+      {
+        "date": "2026-11-12",
+        "listings": 448,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Mercedes-Benz": [
+      {
+        "date": "2026-11-12",
+        "listings": 6192,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Smart": [
+      {
+        "date": "2026-11-12",
+        "listings": 75,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Dodge": [
+      {
+        "date": "2026-11-12",
+        "listings": 5,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Mitsubishi": [
+      {
+        "date": "2026-11-12",
+        "listings": 1690,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Caterham": [
+      {
+        "date": "2026-11-12",
+        "listings": 3,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Hummer": [
+      {
+        "date": "2026-11-12",
+        "listings": 9,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Foxtron": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Bentley": [
+      {
+        "date": "2026-11-12",
+        "listings": 112,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Mahindra": [
+      {
+        "date": "2026-11-12",
+        "listings": 7,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Infiniti": [
+      {
+        "date": "2026-11-12",
+        "listings": 303,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Asia": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Maserati": [
+      {
+        "date": "2026-11-12",
+        "listings": 211,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Acura": [
+      {
+        "date": "2026-11-12",
+        "listings": 7,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Yueloong": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "CMC": [
+      {
+        "date": "2026-11-12",
+        "listings": 548,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "IVECO": [
+      {
+        "date": "2026-11-12",
+        "listings": 11,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Scion": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Tobe": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Land Rover": [
+      {
+        "date": "2026-11-12",
+        "listings": 457,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Porsche": [
+      {
+        "date": "2026-11-12",
+        "listings": 1377,
+        "arrived": null,
+        "sold": null
+      }
+    ],
+    "Toyota": [
+      {
+        "date": "2026-11-12",
+        "listings": 5227,
+        "arrived": null,
+        "sold": null
+      }
+    ]
+  },
+  "brand_list": [
+    "Mercedes-Benz 賓士\tMercedes-Benz",
+    "Toyota 豐田\tToyota",
+    "BMW 寶馬\tBMW",
+    "Volkswagen 福斯\tVolkswagen",
+    "Ford 福特\tFord",
+    "Honda 本田\tHonda",
+    "Lexus 凌志\tLexus",
+    "Mitsubishi 三菱\tMitsubishi",
+    "Nissan 日產\tNissan",
+    "Porsche 保時捷\tPorsche",
+    "Mazda 馬自達\tMazda",
+    "Hyundai 現代\tHyundai",
+    "Audi 奧迪\tAudi",
+    "Volvo 富豪\tVolvo",
+    "Skoda 司科達\tSkoda",
+    "CMC 中華汽車\tCMC",
+    "Mini 迷你\tMini",
+    "Suzuki 鈴木\tSuzuki",
+    "Land Rover 荒原路華\tLand Rover",
+    "Kia 起亞\tKia",
+    "Luxgen 納智捷\tLuxgen",
+    "Tesla 特斯拉\tTesla",
+    "Subaru 速霸陸\tSubaru",
+    "Infiniti 極致\tInfiniti",
+    "MG 名爵\tMG",
+    "Maserati 瑪莎拉蒂\tMaserati",
+    "Peugeot 寶獅\tPeugeot",
+    "Hino 日野\tHino",
+    "Ferrari 法拉利\tFerrari",
+    "Lamborghini 藍寶堅尼\tLamborghini",
+    "Bentley 賓利\tBentley",
+    "Jaguar 捷豹\tJaguar",
+    "Isuzu 五十鈴\tIsuzu",
+    "Smart 智慧\tSmart",
+    "Rolls-Royce 勞斯萊斯\tRolls-Royce",
+    "McLaren 麥拉倫\tMcLaren",
+    "DFSK 東風小康\tDFSK",
+    "Aston Martin 奧斯頓馬丁\tAston Martin",
+    "Alfa Romeo 愛快羅密歐\tAlfa Romeo",
+    "Citroen 雪鐵龍\tCitroen",
+    "Jeep 吉普\tJeep",
+    "Fiat 飛雅特\tFiat",
+    "Chevrolet 雪佛蘭\tChevrolet",
+    "Abarth 阿巴斯\tAbarth",
+    "Daihatsu 大發\tDaihatsu",
+    "Lotus 蓮花\tLotus",
+    "IVECO\tIVECO",
+    "Opel 歐寶\tOpel",
+    "Hummer 悍馬\tHummer",
+    "Acura 謳歌\tAcura",
+    "Mahindra 馬欣德拉\tMahindra",
+    "BRABUS 巴博斯\tBRABUS",
+    "Cadillac 凱迪拉克\tCadillac",
+    "Saab 紳寶\tSaab",
+    "Dodge 道奇\tDodge",
+    "Caterham 凱特漢姆\tCaterham",
+    "Chrysler 克萊斯勒\tChrysler",
+    "Ssangyong 雙龍\tSsangyong",
+    "Foton 福田\tFoton",
+    "Ineos 英奈斯\tIneos",
+    "Asia 亞細亞\tAsia",
+    "BYD 比亞迪\tBYD",
+    "Buick 別克\tBuick",
+    "Foxtron 鴻華\tFoxtron",
+    "GMC\tGMC",
+    "Lincoln 林肯\tLincoln",
+    "Morgan 摩根\tMorgan",
+    "Proton 寶騰\tProton",
+    "Renault 雷諾\tRenault",
+    "Scion\tScion",
+    "Tobe 酷比\tTobe",
+    "Yueloong 裕隆\tYueloong"
+  ],
+  "brand_meta": [
+    {
+      "brand": "Mercedes-Benz",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false
+    },
+    {
+      "brand": "Toyota",
+      "display": "Toyota 豐田",
+      "highlight": false
+    },
+    {
+      "brand": "BMW",
+      "display": "BMW 寶馬",
+      "highlight": false
+    },
+    {
+      "brand": "Volkswagen",
+      "display": "Volkswagen 福斯",
+      "highlight": false
+    },
+    {
+      "brand": "Ford",
+      "display": "Ford 福特",
+      "highlight": false
+    },
+    {
+      "brand": "Honda",
+      "display": "Honda 本田",
+      "highlight": false
+    },
+    {
+      "brand": "Lexus",
+      "display": "Lexus 凌志",
+      "highlight": false
+    },
+    {
+      "brand": "Mitsubishi",
+      "display": "Mitsubishi 三菱",
+      "highlight": false
+    },
+    {
+      "brand": "Nissan",
+      "display": "Nissan 日產",
+      "highlight": false
+    },
+    {
+      "brand": "Porsche",
+      "display": "Porsche 保時捷",
+      "highlight": true
+    },
+    {
+      "brand": "Mazda",
+      "display": "Mazda 馬自達",
+      "highlight": false
+    },
+    {
+      "brand": "Hyundai",
+      "display": "Hyundai 現代",
+      "highlight": false
+    },
+    {
+      "brand": "Audi",
+      "display": "Audi 奧迪",
+      "highlight": false
+    },
+    {
+      "brand": "Volvo",
+      "display": "Volvo 富豪",
+      "highlight": false
+    },
+    {
+      "brand": "Skoda",
+      "display": "Skoda 司科達",
+      "highlight": false
+    },
+    {
+      "brand": "CMC",
+      "display": "CMC 中華汽車",
+      "highlight": false
+    },
+    {
+      "brand": "Mini",
+      "display": "Mini 迷你",
+      "highlight": false
+    },
+    {
+      "brand": "Suzuki",
+      "display": "Suzuki 鈴木",
+      "highlight": false
+    },
+    {
+      "brand": "Land Rover",
+      "display": "Land Rover 荒原路華",
+      "highlight": false
+    },
+    {
+      "brand": "Kia",
+      "display": "Kia 起亞",
+      "highlight": false
+    },
+    {
+      "brand": "Luxgen",
+      "display": "Luxgen 納智捷",
+      "highlight": false
+    },
+    {
+      "brand": "Tesla",
+      "display": "Tesla 特斯拉",
+      "highlight": false
+    },
+    {
+      "brand": "Subaru",
+      "display": "Subaru 速霸陸",
+      "highlight": false
+    },
+    {
+      "brand": "Infiniti",
+      "display": "Infiniti 極致",
+      "highlight": false
+    },
+    {
+      "brand": "MG",
+      "display": "MG 名爵",
+      "highlight": false
+    },
+    {
+      "brand": "Maserati",
+      "display": "Maserati 瑪莎拉蒂",
+      "highlight": false
+    },
+    {
+      "brand": "Peugeot",
+      "display": "Peugeot 寶獅",
+      "highlight": false
+    },
+    {
+      "brand": "Hino",
+      "display": "Hino 日野",
+      "highlight": false
+    },
+    {
+      "brand": "Ferrari",
+      "display": "Ferrari 法拉利",
+      "highlight": false
+    },
+    {
+      "brand": "Lamborghini",
+      "display": "Lamborghini 藍寶堅尼",
+      "highlight": false
+    },
+    {
+      "brand": "Bentley",
+      "display": "Bentley 賓利",
+      "highlight": false
+    },
+    {
+      "brand": "Jaguar",
+      "display": "Jaguar 捷豹",
+      "highlight": false
+    },
+    {
+      "brand": "Isuzu",
+      "display": "Isuzu 五十鈴",
+      "highlight": false
+    },
+    {
+      "brand": "Smart",
+      "display": "Smart 智慧",
+      "highlight": false
+    },
+    {
+      "brand": "Rolls-Royce",
+      "display": "Rolls-Royce 勞斯萊斯",
+      "highlight": false
+    },
+    {
+      "brand": "McLaren",
+      "display": "McLaren 麥拉倫",
+      "highlight": false
+    },
+    {
+      "brand": "DFSK",
+      "display": "DFSK 東風小康",
+      "highlight": false
+    },
+    {
+      "brand": "Aston Martin",
+      "display": "Aston Martin 奧斯頓馬丁",
+      "highlight": false
+    },
+    {
+      "brand": "Alfa Romeo",
+      "display": "Alfa Romeo 愛快羅密歐",
+      "highlight": false
+    },
+    {
+      "brand": "Citroen",
+      "display": "Citroen 雪鐵龍",
+      "highlight": false
+    },
+    {
+      "brand": "Jeep",
+      "display": "Jeep 吉普",
+      "highlight": false
+    },
+    {
+      "brand": "Fiat",
+      "display": "Fiat 飛雅特",
+      "highlight": false
+    },
+    {
+      "brand": "Chevrolet",
+      "display": "Chevrolet 雪佛蘭",
+      "highlight": false
+    },
+    {
+      "brand": "Abarth",
+      "display": "Abarth 阿巴斯",
+      "highlight": false
+    },
+    {
+      "brand": "Daihatsu",
+      "display": "Daihatsu 大發",
+      "highlight": false
+    },
+    {
+      "brand": "Lotus",
+      "display": "Lotus 蓮花",
+      "highlight": false
+    },
+    {
+      "brand": "IVECO",
+      "display": "IVECO",
+      "highlight": false
+    },
+    {
+      "brand": "Opel",
+      "display": "Opel 歐寶",
+      "highlight": false
+    },
+    {
+      "brand": "Hummer",
+      "display": "Hummer 悍馬",
+      "highlight": false
+    },
+    {
+      "brand": "Acura",
+      "display": "Acura 謳歌",
+      "highlight": false
+    },
+    {
+      "brand": "Mahindra",
+      "display": "Mahindra 馬欣德拉",
+      "highlight": false
+    },
+    {
+      "brand": "BRABUS",
+      "display": "BRABUS 巴博斯",
+      "highlight": false
+    },
+    {
+      "brand": "Cadillac",
+      "display": "Cadillac 凱迪拉克",
+      "highlight": false
+    },
+    {
+      "brand": "Saab",
+      "display": "Saab 紳寶",
+      "highlight": false
+    },
+    {
+      "brand": "Dodge",
+      "display": "Dodge 道奇",
+      "highlight": false
+    },
+    {
+      "brand": "Caterham",
+      "display": "Caterham 凱特漢姆",
+      "highlight": false
+    },
+    {
+      "brand": "Chrysler",
+      "display": "Chrysler 克萊斯勒",
+      "highlight": false
+    },
+    {
+      "brand": "Ssangyong",
+      "display": "Ssangyong 雙龍",
+      "highlight": false
+    },
+    {
+      "brand": "Foton",
+      "display": "Foton 福田",
+      "highlight": false
+    },
+    {
+      "brand": "Ineos",
+      "display": "Ineos 英奈斯",
+      "highlight": false
+    },
+    {
+      "brand": "Asia",
+      "display": "Asia 亞細亞",
+      "highlight": false
+    },
+    {
+      "brand": "BYD",
+      "display": "BYD 比亞迪",
+      "highlight": false
+    },
+    {
+      "brand": "Buick",
+      "display": "Buick 別克",
+      "highlight": false
+    },
+    {
+      "brand": "Foxtron",
+      "display": "Foxtron 鴻華",
+      "highlight": false
+    },
+    {
+      "brand": "GMC",
+      "display": "GMC",
+      "highlight": false
+    },
+    {
+      "brand": "Lincoln",
+      "display": "Lincoln 林肯",
+      "highlight": false
+    },
+    {
+      "brand": "Morgan",
+      "display": "Morgan 摩根",
+      "highlight": false
+    },
+    {
+      "brand": "Proton",
+      "display": "Proton 寶騰",
+      "highlight": false
+    },
+    {
+      "brand": "Renault",
+      "display": "Renault 雷諾",
+      "highlight": false
+    },
+    {
+      "brand": "Scion",
+      "display": "Scion",
+      "highlight": false
+    },
+    {
+      "brand": "Tobe",
+      "display": "Tobe 酷比",
+      "highlight": false
+    },
+    {
+      "brand": "Yueloong",
+      "display": "Yueloong 裕隆",
+      "highlight": false
+    }
+  ]
+}
