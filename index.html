@@ -98,6 +98,21 @@
     .chart-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
     footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding: 22px 0 40px; }
     .error { color: #f3b4b8; background: var(--accent-soft); border-radius: var(--radius); padding: 14px 16px; margin: 18px 20px; }
+    .tag {
+      display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+      font-size: 11px; font-weight: 600; letter-spacing: .02em; vertical-align: middle;
+    }
+    .tag.warn { background: rgba(201,162,39,.18); color: #e6c86a; border: 1px solid rgba(201,162,39,.35); }
+    .tag.ref { background: rgba(156,151,140,.16); color: #c9c3b6; border: 1px solid var(--line); }
+    .hot-sub { color: var(--muted); font-size: 12px; font-weight: 400; margin-top: 2px; }
+    td.model { white-space: normal; min-width: 9em; }
+    .hot-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0 0 18px; }
+    .hot-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+    .hot-card.porsche { border-color: rgba(230,49,60,.45); background: var(--accent-soft); }
+    .hot-card .brand { color: var(--muted); font-size: 13px; }
+    .hot-card .model { font-size: 22px; font-weight: 700; margin: 4px 0 8px; }
+    .hot-card .row { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; margin: 3px 0; }
+    .hot-card .row span:last-child { font-variant-numeric: tabular-nums; font-weight: 600; }
     @media (max-width: 720px) {
       .metric .v { font-size: 22px; }
       th, td { padding: 8px 10px; }
@@ -116,6 +131,7 @@
   <div id="error" class="error wrap" hidden></div>
   <div class="wrap">
     <section id="summary"></section>
+    <section id="hot"></section>
     <section id="table"></section>
     <section id="io"></section>
     <section id="stockChart"></section>
@@ -131,6 +147,7 @@
       sortDir: "desc",
       stockBrand: "all",
       salesBrand: "all",
+      hotBrand: "Porsche",
     };
 
     const $ = (id) => document.getElementById(id);
@@ -143,6 +160,42 @@
       return (n * 100).toFixed(digits) + "%";
     };
     const fmtDays = (n) => (n == null ? "—" : Number(n).toLocaleString("zh-TW", { maximumFractionDigits: 1 }) + " 天");
+    function fmtPrice(n) {
+      if (n == null || n === "") return "—";
+      const v = Number(n);
+      if (!Number.isFinite(v)) return "—";
+      if (v >= 10000) {
+        const wan = v / 10000;
+        const digits = wan >= 100 ? 0 : 1;
+        return wan.toLocaleString("zh-TW", { maximumFractionDigits: digits, minimumFractionDigits: 0 }) + " 萬";
+      }
+      return v.toLocaleString("zh-TW") + " 元";
+    }
+    function sampleTag(row, kind) {
+      if (!row) return "";
+      const meta = DATA.hot_models_meta || {};
+      const minN = meta.min_sold_sample || 5;
+      if (kind === "sold") {
+        const n = row.sold == null ? 0 : row.sold;
+        if (n <= 0) return `<span class="tag ref">尚無下架樣本</span>`;
+        if (n < minN) return `<span class="tag warn">樣本偏少 n=${fmtN(n)}</span>`;
+        return `<span class="tag ref">n=${fmtN(n)}</span>`;
+      }
+      return "";
+    }
+    function hotSourceLabel(src) {
+      if (src === "listings_fallback") return "尚無下架樣本，改列目前在架最多的車系（僅供參考）";
+      if (src === "sold_small_sample") return "以下架次數最多的車系為準，但樣本偏少，僅供參考";
+      if (src === "sold") return "以下架（銷售以下架計）次數最多的車系為準";
+      return "尚無資料";
+    }
+    function compareCaption() {
+      const meta = DATA.hot_models_meta || {};
+      const days = meta.compare_days || 0;
+      if (days <= 0) return "目前還沒有下架比較日，熱賣車型會先以在架數最多者當作參考。";
+      if (days === 1) return `目前只有 1 個下架比較日（${esc(meta.window_start || "")} → ${esc(meta.window_end || "")}），樣本還很小，數字會隨每天更新變動。滿 30 日後改採近 30 日累計。`;
+      return `統計區間為 ${esc(meta.window_start || "")} 至 ${esc(meta.window_end || "")}，共 ${fmtN(days)} 個下架比較日（最多取近 30 日）。`;
+    }
     function capturedLabel(iso) {
       if (!iso) return "—";
       const d = new Date(iso);
@@ -186,7 +239,7 @@
           <div class="metric"><div class="v">${fmtDays(m.avg_days_listed)}</div><div class="l">全市場目前平均在架天數</div><div class="d">依 8891 上架日或首次見到日計算</div></div>
         </div>
         <p class="cap">${top ? `目前在架最多的是 ${esc(top.display)} ${fmtN(top.listings)} 輛（上架比 ${fmtPct(top.list_ratio)}）。` : ""}
-          保時捷會在下方表格以紅色列標出。</p>`;
+          保時捷會在下方表格以紅色列標出。熱賣車型與平均售價見下一區。</p>`;
     }
 
     function sortedBrands() {
@@ -194,11 +247,17 @@
       const key = state.sortKey;
       const dir = state.sortDir === "asc" ? 1 : -1;
       const val = (r) => {
+        if (key === "hot_model") return (r.hot_model && r.hot_model.model) || "";
+        if (key === "hot_sold") return (r.hot_model && r.hot_model_source !== "listings_fallback") ? (r.hot_model.sold || 0) : -Infinity * dir;
+        if (key === "hot_price") return (r.hot_model && r.hot_model.sold_price_avg != null) ? r.hot_model.sold_price_avg : -Infinity * dir;
         const v = r[key];
         return v == null ? -Infinity * dir : v;
       };
       rows.sort((a, b) => {
         const va = val(a), vb = val(b);
+        if (typeof va === "string" || typeof vb === "string") {
+          return dir * String(va).localeCompare(String(vb), "zh-Hant") || (b.listings - a.listings);
+        }
         if (va === vb) return (b.listings - a.listings) || a.brand.localeCompare(b.brand, "zh-Hant");
         return va > vb ? dir : -dir;
       });
@@ -208,15 +267,25 @@
     function th(key, label, cls) {
       const active = state.sortKey === key;
       const arrow = active ? (state.sortDir === "asc" ? "▲" : "▼") : "▼";
-      return `<th class="sortable num ${cls || ""} ${active ? "active" : ""}" data-key="${esc(key)}">${esc(label)}<span class="arrow">${arrow}</span></th>`;
+      const align = cls === "text" ? "" : "num";
+      return `<th class="sortable ${align} ${cls && cls !== "text" ? cls : ""} ${active ? "active" : ""}" data-key="${esc(key)}">${esc(label)}<span class="arrow">${arrow}</span></th>`;
     }
 
     function renderTable() {
       const rows = sortedBrands();
       const m = market();
-      const body = rows.map((r) => `
+      const marketHot = ((DATA.hot_models_market || [])[0]) || null;
+      const body = rows.map((r) => {
+        const h = r.hot_model;
+        const fallback = r.hot_model_source === "listings_fallback";
+        return `
         <tr class="${r.highlight ? "porsche" : ""}">
           <td>${esc(r.display)}</td>
+          <td class="model">${h ? esc(h.model) : '<span class="dash">—</span>'} ${h ? sampleTag(h, fallback ? "" : "sold") : ""}
+            ${fallback ? '<div class="hot-sub">參考：目前在架最多</div>' : ""}
+            ${r.listing_leader ? `<div class="hot-sub">參考在架最多：${esc(r.listing_leader.model)}（${fmtN(r.listing_leader.listings)} 輛）</div>` : ""}</td>
+          <td class="num">${fallback || !h ? '<span class="dash">—</span>' : fmtPrice(h.sold_price_avg)}
+            ${!fallback && h && h.sold_price_n ? `<div class="hot-sub">${fmtN(h.sold_price_n)} 筆有價格</div>` : ""}</td>
           <td class="num">${fmtN(r.listings)}</td>
           <td class="num">${r.stock == null ? '<span class="dash">無對應</span>' : fmtN(r.stock)}</td>
           <td class="num">${r.stock ? fmtPct(r.list_ratio) : '<span class="dash">—</span>'}</td>
@@ -225,15 +294,18 @@
           <td class="num">${r.sell_through_30d == null ? '<span class="dash">累積中</span>' : fmtPct(r.sell_through_30d)}</td>
           <td class="num">${fmtDays(r.avg_days_listed)}</td>
           <td class="num">${r.avg_days_to_sell == null ? '<span class="dash">累積中</span>' : fmtDays(r.avg_days_to_sell)}</td>
-        </tr>`).join("");
+        </tr>`;
+      }).join("");
       $("table").innerHTML = `
         <h2>各品牌一覽</h2>
-        <p class="cap">點欄位名稱可排序。全市場列用公路局小客車總計當分母。「無對應」表示公路局該月沒有可合併到這個品牌的掛牌數。「累積中」表示還需要跨日快照才能計算。</p>
+        <p class="cap">點欄位名稱可排序。熱賣車型是該品牌下架次數最多的車系。全市場列用公路局小客車總計當分母。「無對應」表示公路局該月沒有可合併到這個品牌的掛牌數。</p>
         <div class="table-wrap" style="max-height:720px">
           <table>
             <thead>
               <tr>
                 <th class="sortable ${state.sortKey === "brand" ? "active" : ""}" data-key="brand">品牌<span class="arrow">${state.sortKey === "brand" ? (state.sortDir === "asc" ? "▲" : "▼") : "▼"}</span></th>
+                ${th("hot_model", "熱賣車型", "text")}
+                ${th("hot_price", "熱賣車型平均售價")}
                 ${th("listings", "8891 在架")}
                 ${th("stock", "小客車掛牌")}
                 ${th("list_ratio", "上架比")}
@@ -247,6 +319,8 @@
             <tbody>
               <tr class="market">
                 <td>全市場</td>
+                <td class="model">${marketHot ? esc(marketHot.display + " " + marketHot.model) : "—"} ${marketHot ? sampleTag(marketHot, "sold") : ""}</td>
+                <td class="num">${marketHot ? fmtPrice(marketHot.sold_price_avg) : "—"}</td>
                 <td class="num">${fmtN(m.listings)}</td>
                 <td class="num">${fmtN(m.stock)}</td>
                 <td class="num">${fmtPct(m.list_ratio)}</td>
@@ -260,7 +334,7 @@
             </tbody>
           </table>
         </div>
-        <p class="cap" style="margin-top:10px">30 日售出率＝期間內銷售（以下架計）÷ 期間平均在架數。已售平均在架天數只計算已下架的物件。</p>`;
+        <p class="cap" style="margin-top:10px">30 日售出率＝期間內銷售（以下架計）÷ 期間平均在架數。已售平均在架天數只計算已下架的物件。熱賣平均售價排除面議與不合理價格，樣本數可能少於下架台數。</p>`;
       $("table").querySelectorAll("th.sortable").forEach((el) => {
         el.addEventListener("click", () => {
           const key = el.getAttribute("data-key");
@@ -269,6 +343,74 @@
           renderTable();
         });
       });
+    }
+
+    function renderHot() {
+      const meta = DATA.hot_models_meta || {};
+      const marketRows = DATA.hot_models_market || [];
+      const featured = ["Porsche", "Mercedes-Benz", "BMW", "Toyota", "Lexus", "Audi"]
+        .map((name) => brands().find((b) => b.brand === name))
+        .filter(Boolean);
+      const cards = featured.map((r) => {
+        const h = r.hot_model;
+        if (!h) return "";
+        return `<div class="hot-card ${r.highlight ? "porsche" : ""}">
+          <div class="brand">${esc(r.display)}</div>
+          <div class="model">${esc(h.model)} ${sampleTag(h, r.hot_model_source === "listings_fallback" ? "" : "sold")}</div>
+          <div class="hot-sub">${esc(hotSourceLabel(r.hot_model_source))}</div>
+          <div class="row"><span>${esc(SALES_LABEL)}</span><span>${r.hot_model_source === "listings_fallback" ? "—" : fmtN(h.sold)}</span></div>
+          <div class="row"><span>下架平均售價</span><span>${r.hot_model_source === "listings_fallback" ? "—" : fmtPrice(h.sold_price_avg)}${h.sold_price_n && r.hot_model_source !== "listings_fallback" ? `（${fmtN(h.sold_price_n)} 筆）` : ""}</span></div>
+          <div class="row"><span>目前在架</span><span>${fmtN(h.listings)} 輛</span></div>
+          <div class="row"><span>目前在架均價</span><span>${fmtPrice(h.listing_price_avg)}${h.listing_price_n ? `（${fmtN(h.listing_price_n)} 筆）` : ""}</span></div>
+          ${r.listing_leader ? `<div class="hot-sub" style="margin-top:8px">參考：目前在架最多是 ${esc(r.listing_leader.model)}（${fmtN(r.listing_leader.listings)} 輛，均價 ${fmtPrice(r.listing_leader.listing_price_avg)}）</div>` : ""}
+        </div>`;
+      }).join("");
+
+      const brandRow = brands().find((b) => b.brand === state.hotBrand);
+      const top3 = brandRow ? (brandRow.hot_models || []) : [];
+      const top3Body = top3.map((h, i) => `
+        <tr class="${h.highlight ? "porsche" : ""}">
+          <td>${i + 1}</td>
+          <td>${esc(h.model)} ${sampleTag(h, "sold")}</td>
+          <td class="num">${fmtN(h.sold)}</td>
+          <td class="num">${fmtPrice(h.sold_price_avg)}</td>
+          <td class="num">${fmtN(h.sold_price_n)}</td>
+          <td class="num">${fmtN(h.listings)}</td>
+          <td class="num">${fmtPrice(h.listing_price_avg)}</td>
+          <td class="num">${fmtN(h.listing_price_n)}</td>
+        </tr>`).join("");
+
+      const marketBody = marketRows.map((h, i) => `
+        <tr class="${h.highlight ? "porsche" : ""}">
+          <td class="num">${i + 1}</td>
+          <td>${esc(h.display)}</td>
+          <td>${esc(h.model)} ${sampleTag(h, "sold")}</td>
+          <td class="num">${fmtN(h.sold)}</td>
+          <td class="num">${fmtPrice(h.sold_price_avg)}</td>
+          <td class="num">${fmtN(h.sold_price_n)}</td>
+          <td class="num">${fmtN(h.listings)}</td>
+          <td class="num">${fmtPrice(h.listing_price_avg)}</td>
+        </tr>`).join("");
+
+      $("hot").innerHTML = `
+        <h2>熱賣車型與平均售價</h2>
+        <p class="cap">熱賣＝該車系在最近最多 30 日快照中，下架（${esc(SALES_LABEL)}）次數最多。車系已把 8891 車型名稱合併到合理層級（例如保時捷 911、Cayenne、Macan；賓士 C-Class、GLC）。
+          ${compareCaption()} 平均售價是下架物件最後一次在架價格的平均，已排除面議、0 元與明顯不合理的佔位價。</p>
+        <div class="hot-cards">${cards}</div>
+        <div class="toolbar"><label class="select-wrap">品牌前三名
+          <select id="hotBrand">${brandOptions(state.hotBrand).replace('<option value="all"','<option value="all" disabled hidden')}</select></label></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th class="num">#</th><th>車系</th><th class="num">${esc(SALES_LABEL)}</th><th class="num">下架平均售價</th><th class="num">有價格筆數</th><th class="num">目前在架</th><th class="num">目前在架均價</th><th class="num">在架有價格</th></tr></thead>
+          <tbody>${top3Body || `<tr><td colspan="8">${brandRow ? "這個品牌在統計區間內還沒有下架樣本。" : "請選擇品牌。"}</td></tr>`}</tbody>
+        </table></div>
+        <h3 style="font-size:17px;margin:22px 0 8px">全市場熱賣車型（前 20）</h3>
+        <p class="cap">依下架次數排序，次數相同則以目前在架數較多者在前。</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th class="num">#</th><th>品牌</th><th>車系</th><th class="num">${esc(SALES_LABEL)}</th><th class="num">下架平均售價</th><th class="num">有價格筆數</th><th class="num">目前在架</th><th class="num">目前在架均價</th></tr></thead>
+          <tbody>${marketBody || `<tr><td colspan="8">尚無下架資料。</td></tr>`}</tbody>
+        </table></div>`;
+      const sel = $("hotBrand");
+      if (sel) sel.addEventListener("change", (e) => { state.hotBrand = e.target.value; renderHot(); });
     }
 
     function renderIO() {
@@ -405,6 +547,7 @@
       if (!DATA) return;
       renderMeta();
       renderSummary();
+      renderHot();
       renderTable();
       renderIO();
       renderCharts();

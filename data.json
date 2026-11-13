@@ -16,7 +16,8 @@
     "公路局只公布各品牌掛牌數，沒有公布各品牌過戶數，因此無法計算官方週轉率。本站兩個指標都是代理值，不是官方週轉率。",
     "上架比＝8891 當日在架台數 ÷ 公路局最新月份「小客車」登記數。分母不含大客車、貨車與特種車，日野、IVECO 等商用車品牌的分母可能為 0 或明顯偏低。",
     "下架暫定為銷售（以下架計）。物件可能因改價重刊、下架未售、過期或重複刊登而消失或再出現，累積數週資料後較接近真實流動速度。",
-    "公路局廠牌會把英文名與中文在地廠名分開列（例如 TOYOTA 與國瑞）。本站已合併後再計算上架比。"
+    "公路局廠牌會把英文名與中文在地廠名分開列（例如 TOYOTA 與國瑞）。本站已合併後再計算上架比。",
+    "熱賣車型＝該車系在最近最多 30 日快照比較中，下架（銷售以下架計）次數最多者。車系已把 8891 的 kind 名稱合併到合理層級（例如 911 Carrera／911 GT3 算 911，C-Class Sedan／Estate 算 C-Class）。平均售價是這些下架物件最後一次在架價格的算術平均，已排除 0 元、面議與明顯不合理的佔位價格。同時列出該車系目前在架均價與在架台數。樣本小於 5 筆時會加註「樣本偏少」，並另列目前在架最多的車系當參考。"
   ],
   "scrape": {
     "advertised_total": 39666,
@@ -51,7 +52,63 @@
     "sell_through_30d": 0.0312,
     "avg_days_listed": 44.5,
     "avg_days_to_sell": 53.6,
-    "window_days": 2
+    "window_days": 2,
+    "hot_models": [
+      {
+        "brand": "Porsche",
+        "brand_zh": "保時捷",
+        "display": "Porsche 保時捷",
+        "highlight": true,
+        "model": "Cayenne",
+        "sold": 13,
+        "sold_price_avg": 1805714,
+        "sold_price_n": 7,
+        "listings": 453,
+        "listing_price_avg": 1797166,
+        "listing_price_n": 374
+      },
+      {
+        "brand": "Porsche",
+        "brand_zh": "保時捷",
+        "display": "Porsche 保時捷",
+        "highlight": true,
+        "model": "Macan",
+        "sold": 11,
+        "sold_price_avg": 1424250,
+        "sold_price_n": 8,
+        "listings": 379,
+        "listing_price_avg": 1483270,
+        "listing_price_n": 311
+      },
+      {
+        "brand": "Porsche",
+        "brand_zh": "保時捷",
+        "display": "Porsche 保時捷",
+        "highlight": true,
+        "model": "718",
+        "sold": 7,
+        "sold_price_avg": 3275667,
+        "sold_price_n": 6,
+        "listings": 199,
+        "listing_price_avg": 2456944,
+        "listing_price_n": 143
+      }
+    ],
+    "hot_model": {
+      "brand": "Porsche",
+      "brand_zh": "保時捷",
+      "display": "Porsche 保時捷",
+      "highlight": true,
+      "model": "Cayenne",
+      "sold": 13,
+      "sold_price_avg": 1805714,
+      "sold_price_n": 7,
+      "listings": 453,
+      "listing_price_avg": 1797166,
+      "listing_price_n": 374
+    },
+    "hot_model_source": "sold",
+    "listing_leader": null
   },
   "brands": [
     {
@@ -68,7 +125,63 @@
       "sell_through_30d": 0.025,
       "avg_days_listed": 46.0,
       "avg_days_to_sell": 40.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Mercedes-Benz",
+          "brand_zh": "賓士",
+          "display": "Mercedes-Benz 賓士",
+          "highlight": false,
+          "model": "C-Class",
+          "sold": 30,
+          "sold_price_avg": 1013962,
+          "sold_price_n": 26,
+          "listings": 1154,
+          "listing_price_avg": 829649,
+          "listing_price_n": 992
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brand_zh": "賓士",
+          "display": "Mercedes-Benz 賓士",
+          "highlight": false,
+          "model": "E-Class",
+          "sold": 19,
+          "sold_price_avg": 988625,
+          "sold_price_n": 16,
+          "listings": 1019,
+          "listing_price_avg": 1137388,
+          "listing_price_n": 872
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brand_zh": "賓士",
+          "display": "Mercedes-Benz 賓士",
+          "highlight": false,
+          "model": "CLA",
+          "sold": 16,
+          "sold_price_avg": 1207000,
+          "sold_price_n": 15,
+          "listings": 553,
+          "listing_price_avg": 986514,
+          "listing_price_n": 481
+        }
+      ],
+      "hot_model": {
+        "brand": "Mercedes-Benz",
+        "brand_zh": "賓士",
+        "display": "Mercedes-Benz 賓士",
+        "highlight": false,
+        "model": "C-Class",
+        "sold": 30,
+        "sold_price_avg": 1013962,
+        "sold_price_n": 26,
+        "listings": 1154,
+        "listing_price_avg": 829649,
+        "listing_price_n": 992
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Toyota",
@@ -84,7 +197,63 @@
       "sell_through_30d": 0.0284,
       "avg_days_listed": 37.2,
       "avg_days_to_sell": 39.9,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Toyota",
+          "brand_zh": "豐田",
+          "display": "Toyota 豐田",
+          "highlight": false,
+          "model": "Corolla Altis",
+          "sold": 28,
+          "sold_price_avg": 353308,
+          "sold_price_n": 26,
+          "listings": 1045,
+          "listing_price_avg": 332684,
+          "listing_price_n": 950
+        },
+        {
+          "brand": "Toyota",
+          "brand_zh": "豐田",
+          "display": "Toyota 豐田",
+          "highlight": false,
+          "model": "RAV4",
+          "sold": 26,
+          "sold_price_avg": 448538,
+          "sold_price_n": 26,
+          "listings": 593,
+          "listing_price_avg": 520206,
+          "listing_price_n": 528
+        },
+        {
+          "brand": "Toyota",
+          "brand_zh": "豐田",
+          "display": "Toyota 豐田",
+          "highlight": false,
+          "model": "Corolla Cross",
+          "sold": 13,
+          "sold_price_avg": 599846,
+          "sold_price_n": 13,
+          "listings": 403,
+          "listing_price_avg": 582481,
+          "listing_price_n": 376
+        }
+      ],
+      "hot_model": {
+        "brand": "Toyota",
+        "brand_zh": "豐田",
+        "display": "Toyota 豐田",
+        "highlight": false,
+        "model": "Corolla Altis",
+        "sold": 28,
+        "sold_price_avg": 353308,
+        "sold_price_n": 26,
+        "listings": 1045,
+        "listing_price_avg": 332684,
+        "listing_price_n": 950
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "BMW",
@@ -100,7 +269,63 @@
       "sell_through_30d": 0.0231,
       "avg_days_listed": 42.1,
       "avg_days_to_sell": 32.3,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "BMW",
+          "brand_zh": "寶馬",
+          "display": "BMW 寶馬",
+          "highlight": false,
+          "model": "3-Series",
+          "sold": 20,
+          "sold_price_avg": 1258000,
+          "sold_price_n": 18,
+          "listings": 857,
+          "listing_price_avg": 855854,
+          "listing_price_n": 773
+        },
+        {
+          "brand": "BMW",
+          "brand_zh": "寶馬",
+          "display": "BMW 寶馬",
+          "highlight": false,
+          "model": "5-Series",
+          "sold": 16,
+          "sold_price_avg": 1170786,
+          "sold_price_n": 14,
+          "listings": 607,
+          "listing_price_avg": 846453,
+          "listing_price_n": 543
+        },
+        {
+          "brand": "BMW",
+          "brand_zh": "寶馬",
+          "display": "BMW 寶馬",
+          "highlight": false,
+          "model": "2-Series",
+          "sold": 14,
+          "sold_price_avg": 906357,
+          "sold_price_n": 14,
+          "listings": 346,
+          "listing_price_avg": 853391,
+          "listing_price_n": 322
+        }
+      ],
+      "hot_model": {
+        "brand": "BMW",
+        "brand_zh": "寶馬",
+        "display": "BMW 寶馬",
+        "highlight": false,
+        "model": "3-Series",
+        "sold": 20,
+        "sold_price_avg": 1258000,
+        "sold_price_n": 18,
+        "listings": 857,
+        "listing_price_avg": 855854,
+        "listing_price_n": 773
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Volkswagen",
@@ -116,7 +341,63 @@
       "sell_through_30d": 0.0231,
       "avg_days_listed": 46.1,
       "avg_days_to_sell": 31.9,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Volkswagen",
+          "brand_zh": "福斯",
+          "display": "Volkswagen 福斯",
+          "highlight": false,
+          "model": "Golf",
+          "sold": 16,
+          "sold_price_avg": 610714,
+          "sold_price_n": 14,
+          "listings": 658,
+          "listing_price_avg": 686021,
+          "listing_price_n": 619
+        },
+        {
+          "brand": "Volkswagen",
+          "brand_zh": "福斯",
+          "display": "Volkswagen 福斯",
+          "highlight": false,
+          "model": "Tiguan",
+          "sold": 12,
+          "sold_price_avg": 527444,
+          "sold_price_n": 9,
+          "listings": 497,
+          "listing_price_avg": 623061,
+          "listing_price_n": 475
+        },
+        {
+          "brand": "Volkswagen",
+          "brand_zh": "福斯",
+          "display": "Volkswagen 福斯",
+          "highlight": false,
+          "model": "T-Roc",
+          "sold": 6,
+          "sold_price_avg": 660167,
+          "sold_price_n": 6,
+          "listings": 128,
+          "listing_price_avg": 755071,
+          "listing_price_n": 127
+        }
+      ],
+      "hot_model": {
+        "brand": "Volkswagen",
+        "brand_zh": "福斯",
+        "display": "Volkswagen 福斯",
+        "highlight": false,
+        "model": "Golf",
+        "sold": 16,
+        "sold_price_avg": 610714,
+        "sold_price_n": 14,
+        "listings": 658,
+        "listing_price_avg": 686021,
+        "listing_price_n": 619
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Ford",
@@ -132,7 +413,63 @@
       "sell_through_30d": 0.0193,
       "avg_days_listed": 42.9,
       "avg_days_to_sell": 36.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Ford",
+          "brand_zh": "福特",
+          "display": "Ford 福特",
+          "highlight": false,
+          "model": "Focus",
+          "sold": 20,
+          "sold_price_avg": 436111,
+          "sold_price_n": 18,
+          "listings": 969,
+          "listing_price_avg": 410508,
+          "listing_price_n": 927
+        },
+        {
+          "brand": "Ford",
+          "brand_zh": "福特",
+          "display": "Ford 福特",
+          "highlight": false,
+          "model": "Kuga",
+          "sold": 8,
+          "sold_price_avg": 422000,
+          "sold_price_n": 8,
+          "listings": 452,
+          "listing_price_avg": 422047,
+          "listing_price_n": 430
+        },
+        {
+          "brand": "Ford",
+          "brand_zh": "福特",
+          "display": "Ford 福特",
+          "highlight": false,
+          "model": "Focus Active",
+          "sold": 2,
+          "sold_price_avg": 626500,
+          "sold_price_n": 2,
+          "listings": 106,
+          "listing_price_avg": 530920,
+          "listing_price_n": 100
+        }
+      ],
+      "hot_model": {
+        "brand": "Ford",
+        "brand_zh": "福特",
+        "display": "Ford 福特",
+        "highlight": false,
+        "model": "Focus",
+        "sold": 20,
+        "sold_price_avg": 436111,
+        "sold_price_n": 18,
+        "listings": 969,
+        "listing_price_avg": 410508,
+        "listing_price_n": 927
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Honda",
@@ -148,7 +485,63 @@
       "sell_through_30d": 0.0242,
       "avg_days_listed": 34.2,
       "avg_days_to_sell": 49.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Honda",
+          "brand_zh": "本田",
+          "display": "Honda 本田",
+          "highlight": false,
+          "model": "HR-V",
+          "sold": 11,
+          "sold_price_avg": 458909,
+          "sold_price_n": 11,
+          "listings": 288,
+          "listing_price_avg": 482456,
+          "listing_price_n": 272
+        },
+        {
+          "brand": "Honda",
+          "brand_zh": "本田",
+          "display": "Honda 本田",
+          "highlight": false,
+          "model": "CR-V",
+          "sold": 10,
+          "sold_price_avg": 491500,
+          "sold_price_n": 10,
+          "listings": 722,
+          "listing_price_avg": 459444,
+          "listing_price_n": 676
+        },
+        {
+          "brand": "Honda",
+          "brand_zh": "本田",
+          "display": "Honda 本田",
+          "highlight": false,
+          "model": "Fit",
+          "sold": 8,
+          "sold_price_avg": 306750,
+          "sold_price_n": 8,
+          "listings": 321,
+          "listing_price_avg": 321648,
+          "listing_price_n": 293
+        }
+      ],
+      "hot_model": {
+        "brand": "Honda",
+        "brand_zh": "本田",
+        "display": "Honda 本田",
+        "highlight": false,
+        "model": "HR-V",
+        "sold": 11,
+        "sold_price_avg": 458909,
+        "sold_price_n": 11,
+        "listings": 288,
+        "listing_price_avg": 482456,
+        "listing_price_n": 272
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Lexus",
@@ -164,7 +557,63 @@
       "sell_through_30d": 0.0227,
       "avg_days_listed": 39.7,
       "avg_days_to_sell": 32.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Lexus",
+          "brand_zh": "凌志",
+          "display": "Lexus 凌志",
+          "highlight": false,
+          "model": "NX",
+          "sold": 12,
+          "sold_price_avg": 1083600,
+          "sold_price_n": 10,
+          "listings": 398,
+          "listing_price_avg": 951318,
+          "listing_price_n": 374
+        },
+        {
+          "brand": "Lexus",
+          "brand_zh": "凌志",
+          "display": "Lexus 凌志",
+          "highlight": false,
+          "model": "ES",
+          "sold": 11,
+          "sold_price_avg": 872500,
+          "sold_price_n": 8,
+          "listings": 301,
+          "listing_price_avg": 811208,
+          "listing_price_n": 284
+        },
+        {
+          "brand": "Lexus",
+          "brand_zh": "凌志",
+          "display": "Lexus 凌志",
+          "highlight": false,
+          "model": "RX",
+          "sold": 5,
+          "sold_price_avg": 1028500,
+          "sold_price_n": 4,
+          "listings": 362,
+          "listing_price_avg": 965748,
+          "listing_price_n": 330
+        }
+      ],
+      "hot_model": {
+        "brand": "Lexus",
+        "brand_zh": "凌志",
+        "display": "Lexus 凌志",
+        "highlight": false,
+        "model": "NX",
+        "sold": 12,
+        "sold_price_avg": 1083600,
+        "sold_price_n": 10,
+        "listings": 398,
+        "listing_price_avg": 951318,
+        "listing_price_n": 374
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Mitsubishi",
@@ -180,7 +629,63 @@
       "sell_through_30d": 0.0248,
       "avg_days_listed": 47.3,
       "avg_days_to_sell": 46.3,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Mitsubishi",
+          "brand_zh": "三菱",
+          "display": "Mitsubishi 三菱",
+          "highlight": false,
+          "model": "Zinger",
+          "sold": 6,
+          "sold_price_avg": 318000,
+          "sold_price_n": 5,
+          "listings": 186,
+          "listing_price_avg": 264920,
+          "listing_price_n": 174
+        },
+        {
+          "brand": "Mitsubishi",
+          "brand_zh": "三菱",
+          "display": "Mitsubishi 三菱",
+          "highlight": false,
+          "model": "Veryca",
+          "sold": 5,
+          "sold_price_avg": 235500,
+          "sold_price_n": 4,
+          "listings": 160,
+          "listing_price_avg": 278291,
+          "listing_price_n": 148
+        },
+        {
+          "brand": "Mitsubishi",
+          "brand_zh": "三菱",
+          "display": "Mitsubishi 三菱",
+          "highlight": false,
+          "model": "Canter",
+          "sold": 4,
+          "sold_price_avg": 576000,
+          "sold_price_n": 3,
+          "listings": 357,
+          "listing_price_avg": 673661,
+          "listing_price_n": 304
+        }
+      ],
+      "hot_model": {
+        "brand": "Mitsubishi",
+        "brand_zh": "三菱",
+        "display": "Mitsubishi 三菱",
+        "highlight": false,
+        "model": "Zinger",
+        "sold": 6,
+        "sold_price_avg": 318000,
+        "sold_price_n": 5,
+        "listings": 186,
+        "listing_price_avg": 264920,
+        "listing_price_n": 174
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Nissan",
@@ -196,7 +701,63 @@
       "sell_through_30d": 0.0266,
       "avg_days_listed": 42.9,
       "avg_days_to_sell": 34.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Nissan",
+          "brand_zh": "日產",
+          "display": "Nissan 日產",
+          "highlight": false,
+          "model": "Sentra",
+          "sold": 15,
+          "sold_price_avg": 355857,
+          "sold_price_n": 14,
+          "listings": 339,
+          "listing_price_avg": 361060,
+          "listing_price_n": 317
+        },
+        {
+          "brand": "Nissan",
+          "brand_zh": "日產",
+          "display": "Nissan 日產",
+          "highlight": false,
+          "model": "Tiida",
+          "sold": 9,
+          "sold_price_avg": 269250,
+          "sold_price_n": 8,
+          "listings": 352,
+          "listing_price_avg": 227283,
+          "listing_price_n": 332
+        },
+        {
+          "brand": "Nissan",
+          "brand_zh": "日產",
+          "display": "Nissan 日產",
+          "highlight": false,
+          "model": "X-Trail",
+          "sold": 5,
+          "sold_price_avg": 634400,
+          "sold_price_n": 5,
+          "listings": 175,
+          "listing_price_avg": 431295,
+          "listing_price_n": 156
+        }
+      ],
+      "hot_model": {
+        "brand": "Nissan",
+        "brand_zh": "日產",
+        "display": "Nissan 日產",
+        "highlight": false,
+        "model": "Sentra",
+        "sold": 15,
+        "sold_price_avg": 355857,
+        "sold_price_n": 14,
+        "listings": 339,
+        "listing_price_avg": 361060,
+        "listing_price_n": 317
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Porsche",
@@ -212,7 +773,63 @@
       "sell_through_30d": 0.0312,
       "avg_days_listed": 44.5,
       "avg_days_to_sell": 53.6,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Porsche",
+          "brand_zh": "保時捷",
+          "display": "Porsche 保時捷",
+          "highlight": true,
+          "model": "Cayenne",
+          "sold": 13,
+          "sold_price_avg": 1805714,
+          "sold_price_n": 7,
+          "listings": 453,
+          "listing_price_avg": 1797166,
+          "listing_price_n": 374
+        },
+        {
+          "brand": "Porsche",
+          "brand_zh": "保時捷",
+          "display": "Porsche 保時捷",
+          "highlight": true,
+          "model": "Macan",
+          "sold": 11,
+          "sold_price_avg": 1424250,
+          "sold_price_n": 8,
+          "listings": 379,
+          "listing_price_avg": 1483270,
+          "listing_price_n": 311
+        },
+        {
+          "brand": "Porsche",
+          "brand_zh": "保時捷",
+          "display": "Porsche 保時捷",
+          "highlight": true,
+          "model": "718",
+          "sold": 7,
+          "sold_price_avg": 3275667,
+          "sold_price_n": 6,
+          "listings": 199,
+          "listing_price_avg": 2456944,
+          "listing_price_n": 143
+        }
+      ],
+      "hot_model": {
+        "brand": "Porsche",
+        "brand_zh": "保時捷",
+        "display": "Porsche 保時捷",
+        "highlight": true,
+        "model": "Cayenne",
+        "sold": 13,
+        "sold_price_avg": 1805714,
+        "sold_price_n": 7,
+        "listings": 453,
+        "listing_price_avg": 1797166,
+        "listing_price_n": 374
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Mazda",
@@ -228,7 +845,63 @@
       "sell_through_30d": 0.0203,
       "avg_days_listed": 34.6,
       "avg_days_to_sell": 42.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Mazda",
+          "brand_zh": "馬自達",
+          "display": "Mazda 馬自達",
+          "highlight": false,
+          "model": "3",
+          "sold": 14,
+          "sold_price_avg": 378429,
+          "sold_price_n": 14,
+          "listings": 567,
+          "listing_price_avg": 342734,
+          "listing_price_n": 527
+        },
+        {
+          "brand": "Mazda",
+          "brand_zh": "馬自達",
+          "display": "Mazda 馬自達",
+          "highlight": false,
+          "model": "CX-5",
+          "sold": 5,
+          "sold_price_avg": 396400,
+          "sold_price_n": 5,
+          "listings": 193,
+          "listing_price_avg": 476511,
+          "listing_price_n": 182
+        },
+        {
+          "brand": "Mazda",
+          "brand_zh": "馬自達",
+          "display": "Mazda 馬自達",
+          "highlight": false,
+          "model": "CX-3",
+          "sold": 3,
+          "sold_price_avg": 348000,
+          "sold_price_n": 3,
+          "listings": 119,
+          "listing_price_avg": 359661,
+          "listing_price_n": 118
+        }
+      ],
+      "hot_model": {
+        "brand": "Mazda",
+        "brand_zh": "馬自達",
+        "display": "Mazda 馬自達",
+        "highlight": false,
+        "model": "3",
+        "sold": 14,
+        "sold_price_avg": 378429,
+        "sold_price_n": 14,
+        "listings": 567,
+        "listing_price_avg": 342734,
+        "listing_price_n": 527
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Hyundai",
@@ -244,7 +917,63 @@
       "sell_through_30d": 0.0299,
       "avg_days_listed": 49.0,
       "avg_days_to_sell": 49.7,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Hyundai",
+          "brand_zh": "現代",
+          "display": "Hyundai 現代",
+          "highlight": false,
+          "model": "Elantra",
+          "sold": 11,
+          "sold_price_avg": 272000,
+          "sold_price_n": 10,
+          "listings": 250,
+          "listing_price_avg": 266743,
+          "listing_price_n": 237
+        },
+        {
+          "brand": "Hyundai",
+          "brand_zh": "現代",
+          "display": "Hyundai 現代",
+          "highlight": false,
+          "model": "Custin",
+          "sold": 5,
+          "sold_price_avg": 1020000,
+          "sold_price_n": 5,
+          "listings": 124,
+          "listing_price_avg": 1077017,
+          "listing_price_n": 118
+        },
+        {
+          "brand": "Hyundai",
+          "brand_zh": "現代",
+          "display": "Hyundai 現代",
+          "highlight": false,
+          "model": "Tucson",
+          "sold": 4,
+          "sold_price_avg": 696250,
+          "sold_price_n": 4,
+          "listings": 285,
+          "listing_price_avg": 583655,
+          "listing_price_n": 278
+        }
+      ],
+      "hot_model": {
+        "brand": "Hyundai",
+        "brand_zh": "現代",
+        "display": "Hyundai 現代",
+        "highlight": false,
+        "model": "Elantra",
+        "sold": 11,
+        "sold_price_avg": 272000,
+        "sold_price_n": 10,
+        "listings": 250,
+        "listing_price_avg": 266743,
+        "listing_price_n": 237
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Audi",
@@ -260,7 +989,63 @@
       "sell_through_30d": 0.0237,
       "avg_days_listed": 53.2,
       "avg_days_to_sell": 53.8,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Audi",
+          "brand_zh": "奧迪",
+          "display": "Audi 奧迪",
+          "highlight": false,
+          "model": "A3",
+          "sold": 4,
+          "sold_price_avg": 505333,
+          "sold_price_n": 3,
+          "listings": 159,
+          "listing_price_avg": 520377,
+          "listing_price_n": 151
+        },
+        {
+          "brand": "Audi",
+          "brand_zh": "奧迪",
+          "display": "Audi 奧迪",
+          "highlight": false,
+          "model": "A6",
+          "sold": 4,
+          "sold_price_avg": 286500,
+          "sold_price_n": 4,
+          "listings": 102,
+          "listing_price_avg": 761074,
+          "listing_price_n": 94
+        },
+        {
+          "brand": "Audi",
+          "brand_zh": "奧迪",
+          "display": "Audi 奧迪",
+          "highlight": false,
+          "model": "Q5",
+          "sold": 3,
+          "sold_price_avg": 1530667,
+          "sold_price_n": 3,
+          "listings": 107,
+          "listing_price_avg": 1058980,
+          "listing_price_n": 98
+        }
+      ],
+      "hot_model": {
+        "brand": "Audi",
+        "brand_zh": "奧迪",
+        "display": "Audi 奧迪",
+        "highlight": false,
+        "model": "A3",
+        "sold": 4,
+        "sold_price_avg": 505333,
+        "sold_price_n": 3,
+        "listings": 159,
+        "listing_price_avg": 520377,
+        "listing_price_n": 151
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Volvo",
@@ -276,7 +1061,63 @@
       "sell_through_30d": 0.019,
       "avg_days_listed": 40.7,
       "avg_days_to_sell": 28.2,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Volvo",
+          "brand_zh": "富豪",
+          "display": "Volvo 富豪",
+          "highlight": false,
+          "model": "V60",
+          "sold": 6,
+          "sold_price_avg": 677667,
+          "sold_price_n": 6,
+          "listings": 103,
+          "listing_price_avg": 913779,
+          "listing_price_n": 95
+        },
+        {
+          "brand": "Volvo",
+          "brand_zh": "富豪",
+          "display": "Volvo 富豪",
+          "highlight": false,
+          "model": "XC60",
+          "sold": 4,
+          "sold_price_avg": 651000,
+          "sold_price_n": 4,
+          "listings": 235,
+          "listing_price_avg": 904482,
+          "listing_price_n": 226
+        },
+        {
+          "brand": "Volvo",
+          "brand_zh": "富豪",
+          "display": "Volvo 富豪",
+          "highlight": false,
+          "model": "XC90",
+          "sold": 2,
+          "sold_price_avg": 883000,
+          "sold_price_n": 2,
+          "listings": 151,
+          "listing_price_avg": 1257362,
+          "listing_price_n": 149
+        }
+      ],
+      "hot_model": {
+        "brand": "Volvo",
+        "brand_zh": "富豪",
+        "display": "Volvo 富豪",
+        "highlight": false,
+        "model": "V60",
+        "sold": 6,
+        "sold_price_avg": 677667,
+        "sold_price_n": 6,
+        "listings": 103,
+        "listing_price_avg": 913779,
+        "listing_price_n": 95
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Skoda",
@@ -292,7 +1133,63 @@
       "sell_through_30d": 0.015,
       "avg_days_listed": 47.9,
       "avg_days_to_sell": 30.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Skoda",
+          "brand_zh": "司科達",
+          "display": "Skoda 司科達",
+          "highlight": false,
+          "model": "Kodiaq",
+          "sold": 3,
+          "sold_price_avg": 754000,
+          "sold_price_n": 3,
+          "listings": 162,
+          "listing_price_avg": 699680,
+          "listing_price_n": 147
+        },
+        {
+          "brand": "Skoda",
+          "brand_zh": "司科達",
+          "display": "Skoda 司科達",
+          "highlight": false,
+          "model": "Octavia Combi",
+          "sold": 3,
+          "sold_price_avg": 669000,
+          "sold_price_n": 2,
+          "listings": 96,
+          "listing_price_avg": 662022,
+          "listing_price_n": 91
+        },
+        {
+          "brand": "Skoda",
+          "brand_zh": "司科達",
+          "display": "Skoda 司科達",
+          "highlight": false,
+          "model": "Fabia",
+          "sold": 3,
+          "sold_price_avg": 303667,
+          "sold_price_n": 3,
+          "listings": 80,
+          "listing_price_avg": 326333,
+          "listing_price_n": 69
+        }
+      ],
+      "hot_model": {
+        "brand": "Skoda",
+        "brand_zh": "司科達",
+        "display": "Skoda 司科達",
+        "highlight": false,
+        "model": "Kodiaq",
+        "sold": 3,
+        "sold_price_avg": 754000,
+        "sold_price_n": 3,
+        "listings": 162,
+        "listing_price_avg": 699680,
+        "listing_price_n": 147
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "CMC",
@@ -308,7 +1205,63 @@
       "sell_through_30d": 0.02,
       "avg_days_listed": 44.8,
       "avg_days_to_sell": 41.9,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "CMC",
+          "brand_zh": "中華汽車",
+          "display": "CMC 中華汽車",
+          "highlight": false,
+          "model": "Zinger",
+          "sold": 5,
+          "sold_price_avg": 456000,
+          "sold_price_n": 5,
+          "listings": 127,
+          "listing_price_avg": 290286,
+          "listing_price_n": 126
+        },
+        {
+          "brand": "CMC",
+          "brand_zh": "中華汽車",
+          "display": "CMC 中華汽車",
+          "highlight": false,
+          "model": "Zinger Pick Up",
+          "sold": 3,
+          "sold_price_avg": 324667,
+          "sold_price_n": 3,
+          "listings": 13,
+          "listing_price_avg": 334462,
+          "listing_price_n": 13
+        },
+        {
+          "brand": "CMC",
+          "brand_zh": "中華汽車",
+          "display": "CMC 中華汽車",
+          "highlight": false,
+          "model": "Veryca A190",
+          "sold": 2,
+          "sold_price_avg": 298000,
+          "sold_price_n": 2,
+          "listings": 102,
+          "listing_price_avg": 335032,
+          "listing_price_n": 95
+        }
+      ],
+      "hot_model": {
+        "brand": "CMC",
+        "brand_zh": "中華汽車",
+        "display": "CMC 中華汽車",
+        "highlight": false,
+        "model": "Zinger",
+        "sold": 5,
+        "sold_price_avg": 456000,
+        "sold_price_n": 5,
+        "listings": 127,
+        "listing_price_avg": 290286,
+        "listing_price_n": 126
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Suzuki",
@@ -324,7 +1277,63 @@
       "sell_through_30d": 0.0159,
       "avg_days_listed": 38.1,
       "avg_days_to_sell": 28.8,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Suzuki",
+          "brand_zh": "鈴木",
+          "display": "Suzuki 鈴木",
+          "highlight": false,
+          "model": "Swift",
+          "sold": 4,
+          "sold_price_avg": 498000,
+          "sold_price_n": 4,
+          "listings": 204,
+          "listing_price_avg": 314628,
+          "listing_price_n": 188
+        },
+        {
+          "brand": "Suzuki",
+          "brand_zh": "鈴木",
+          "display": "Suzuki 鈴木",
+          "highlight": false,
+          "model": "Jimny",
+          "sold": 1,
+          "sold_price_avg": 588000,
+          "sold_price_n": 1,
+          "listings": 79,
+          "listing_price_avg": 604319,
+          "listing_price_n": 72
+        },
+        {
+          "brand": "Suzuki",
+          "brand_zh": "鈴木",
+          "display": "Suzuki 鈴木",
+          "highlight": false,
+          "model": "SX4",
+          "sold": 1,
+          "sold_price_avg": 125000,
+          "sold_price_n": 1,
+          "listings": 32,
+          "listing_price_avg": 221346,
+          "listing_price_n": 26
+        }
+      ],
+      "hot_model": {
+        "brand": "Suzuki",
+        "brand_zh": "鈴木",
+        "display": "Suzuki 鈴木",
+        "highlight": false,
+        "model": "Swift",
+        "sold": 4,
+        "sold_price_avg": 498000,
+        "sold_price_n": 4,
+        "listings": 204,
+        "listing_price_avg": 314628,
+        "listing_price_n": 188
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Mini",
@@ -340,7 +1349,63 @@
       "sell_through_30d": 0.0336,
       "avg_days_listed": 49.2,
       "avg_days_to_sell": 27.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Mini",
+          "brand_zh": "迷你",
+          "display": "Mini 迷你",
+          "highlight": false,
+          "model": "Countryman",
+          "sold": 3,
+          "sold_price_avg": 809000,
+          "sold_price_n": 2,
+          "listings": 169,
+          "listing_price_avg": 691175,
+          "listing_price_n": 154
+        },
+        {
+          "brand": "Mini",
+          "brand_zh": "迷你",
+          "display": "Mini 迷你",
+          "highlight": false,
+          "model": "Countryman S",
+          "sold": 3,
+          "sold_price_avg": 882000,
+          "sold_price_n": 3,
+          "listings": 37,
+          "listing_price_avg": 664625,
+          "listing_price_n": 32
+        },
+        {
+          "brand": "Mini",
+          "brand_zh": "迷你",
+          "display": "Mini 迷你",
+          "highlight": false,
+          "model": "Cooper S",
+          "sold": 2,
+          "sold_price_avg": 798000,
+          "sold_price_n": 1,
+          "listings": 41,
+          "listing_price_avg": 915848,
+          "listing_price_n": 33
+        }
+      ],
+      "hot_model": {
+        "brand": "Mini",
+        "brand_zh": "迷你",
+        "display": "Mini 迷你",
+        "highlight": false,
+        "model": "Countryman",
+        "sold": 3,
+        "sold_price_avg": 809000,
+        "sold_price_n": 2,
+        "listings": 169,
+        "listing_price_avg": 691175,
+        "listing_price_n": 154
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Land Rover",
@@ -356,7 +1421,63 @@
       "sell_through_30d": 0.0197,
       "avg_days_listed": 46.9,
       "avg_days_to_sell": 30.1,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Land Rover",
+          "brand_zh": "荒原路華",
+          "display": "Land Rover 荒原路華",
+          "highlight": false,
+          "model": "Range Rover Evoque",
+          "sold": 3,
+          "sold_price_avg": 1205333,
+          "sold_price_n": 3,
+          "listings": 114,
+          "listing_price_avg": 1008388,
+          "listing_price_n": 98
+        },
+        {
+          "brand": "Land Rover",
+          "brand_zh": "荒原路華",
+          "display": "Land Rover 荒原路華",
+          "highlight": false,
+          "model": "Defender",
+          "sold": 3,
+          "sold_price_avg": 2141333,
+          "sold_price_n": 3,
+          "listings": 96,
+          "listing_price_avg": 2386179,
+          "listing_price_n": 78
+        },
+        {
+          "brand": "Land Rover",
+          "brand_zh": "荒原路華",
+          "display": "Land Rover 荒原路華",
+          "highlight": false,
+          "model": "Range Rover",
+          "sold": 2,
+          "sold_price_avg": 4184000,
+          "sold_price_n": 2,
+          "listings": 34,
+          "listing_price_avg": 2943080,
+          "listing_price_n": 25
+        }
+      ],
+      "hot_model": {
+        "brand": "Land Rover",
+        "brand_zh": "荒原路華",
+        "display": "Land Rover 荒原路華",
+        "highlight": false,
+        "model": "Range Rover Evoque",
+        "sold": 3,
+        "sold_price_avg": 1205333,
+        "sold_price_n": 3,
+        "listings": 114,
+        "listing_price_avg": 1008388,
+        "listing_price_n": 98
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Luxgen",
@@ -372,7 +1493,75 @@
       "sell_through_30d": 0.0314,
       "avg_days_listed": 40.5,
       "avg_days_to_sell": 31.9,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Luxgen",
+          "brand_zh": "納智捷",
+          "display": "Luxgen 納智捷",
+          "highlight": false,
+          "model": "M7 Turbo EcoHyper",
+          "sold": 3,
+          "sold_price_avg": 203667,
+          "sold_price_n": 3,
+          "listings": 61,
+          "listing_price_avg": 222304,
+          "listing_price_n": 56
+        },
+        {
+          "brand": "Luxgen",
+          "brand_zh": "納智捷",
+          "display": "Luxgen 納智捷",
+          "highlight": false,
+          "model": "U6 Turbo",
+          "sold": 3,
+          "sold_price_avg": 105333,
+          "sold_price_n": 3,
+          "listings": 28,
+          "listing_price_avg": 124741,
+          "listing_price_n": 27
+        },
+        {
+          "brand": "Luxgen",
+          "brand_zh": "納智捷",
+          "display": "Luxgen 納智捷",
+          "highlight": false,
+          "model": "U6 Neo",
+          "sold": 2,
+          "sold_price_avg": 458000,
+          "sold_price_n": 1,
+          "listings": 8,
+          "listing_price_avg": 409167,
+          "listing_price_n": 6
+        }
+      ],
+      "hot_model": {
+        "brand": "Luxgen",
+        "brand_zh": "納智捷",
+        "display": "Luxgen 納智捷",
+        "highlight": false,
+        "model": "M7 Turbo EcoHyper",
+        "sold": 3,
+        "sold_price_avg": 203667,
+        "sold_price_n": 3,
+        "listings": 61,
+        "listing_price_avg": 222304,
+        "listing_price_n": 56
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": {
+        "brand": "Luxgen",
+        "brand_zh": "納智捷",
+        "display": "Luxgen 納智捷",
+        "highlight": false,
+        "model": "U6 GT",
+        "sold": 1,
+        "sold_price_avg": 160000,
+        "sold_price_n": 1,
+        "listings": 78,
+        "listing_price_avg": 222627,
+        "listing_price_n": 75
+      }
     },
     {
       "brand": "Kia",
@@ -388,7 +1577,63 @@
       "sell_through_30d": 0.0247,
       "avg_days_listed": 48.3,
       "avg_days_to_sell": 74.5,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Kia",
+          "brand_zh": "起亞",
+          "display": "Kia 起亞",
+          "highlight": false,
+          "model": "Picanto",
+          "sold": 2,
+          "sold_price_avg": 378000,
+          "sold_price_n": 2,
+          "listings": 74,
+          "listing_price_avg": 362275,
+          "listing_price_n": 69
+        },
+        {
+          "brand": "Kia",
+          "brand_zh": "起亞",
+          "display": "Kia 起亞",
+          "highlight": false,
+          "model": "Sportage",
+          "sold": 2,
+          "sold_price_avg": 988000,
+          "sold_price_n": 1,
+          "listings": 67,
+          "listing_price_avg": 814985,
+          "listing_price_n": 65
+        },
+        {
+          "brand": "Kia",
+          "brand_zh": "起亞",
+          "display": "Kia 起亞",
+          "highlight": false,
+          "model": "Carens",
+          "sold": 2,
+          "sold_price_avg": 250000,
+          "sold_price_n": 2,
+          "listings": 19,
+          "listing_price_avg": 292389,
+          "listing_price_n": 18
+        }
+      ],
+      "hot_model": {
+        "brand": "Kia",
+        "brand_zh": "起亞",
+        "display": "Kia 起亞",
+        "highlight": false,
+        "model": "Picanto",
+        "sold": 2,
+        "sold_price_avg": 378000,
+        "sold_price_n": 2,
+        "listings": 74,
+        "listing_price_avg": 362275,
+        "listing_price_n": 69
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Tesla",
@@ -404,7 +1649,63 @@
       "sell_through_30d": 0.0319,
       "avg_days_listed": 27.7,
       "avg_days_to_sell": 28.1,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Tesla",
+          "brand_zh": "特斯拉",
+          "display": "Tesla 特斯拉",
+          "highlight": false,
+          "model": "Model 3",
+          "sold": 7,
+          "sold_price_avg": 1065333,
+          "sold_price_n": 6,
+          "listings": 217,
+          "listing_price_avg": 1082112,
+          "listing_price_n": 205
+        },
+        {
+          "brand": "Tesla",
+          "brand_zh": "特斯拉",
+          "display": "Tesla 特斯拉",
+          "highlight": false,
+          "model": "Model Y",
+          "sold": 4,
+          "sold_price_avg": 1517250,
+          "sold_price_n": 4,
+          "listings": 152,
+          "listing_price_avg": 1462986,
+          "listing_price_n": 144
+        },
+        {
+          "brand": "Tesla",
+          "brand_zh": "特斯拉",
+          "display": "Tesla 特斯拉",
+          "highlight": false,
+          "model": "Model X",
+          "sold": 2,
+          "sold_price_avg": 1739000,
+          "sold_price_n": 2,
+          "listings": 56,
+          "listing_price_avg": 2110431,
+          "listing_price_n": 51
+        }
+      ],
+      "hot_model": {
+        "brand": "Tesla",
+        "brand_zh": "特斯拉",
+        "display": "Tesla 特斯拉",
+        "highlight": false,
+        "model": "Model 3",
+        "sold": 7,
+        "sold_price_avg": 1065333,
+        "sold_price_n": 6,
+        "listings": 217,
+        "listing_price_avg": 1082112,
+        "listing_price_n": 205
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Subaru",
@@ -420,7 +1721,63 @@
       "sell_through_30d": 0.0311,
       "avg_days_listed": 56.7,
       "avg_days_to_sell": 49.7,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Subaru",
+          "brand_zh": "速霸陸",
+          "display": "Subaru 速霸陸",
+          "highlight": false,
+          "model": "Forester",
+          "sold": 5,
+          "sold_price_avg": 328800,
+          "sold_price_n": 5,
+          "listings": 151,
+          "listing_price_avg": 321906,
+          "listing_price_n": 139
+        },
+        {
+          "brand": "Subaru",
+          "brand_zh": "速霸陸",
+          "display": "Subaru 速霸陸",
+          "highlight": false,
+          "model": "XV",
+          "sold": 3,
+          "sold_price_avg": 324667,
+          "sold_price_n": 3,
+          "listings": 60,
+          "listing_price_avg": 322569,
+          "listing_price_n": 58
+        },
+        {
+          "brand": "Subaru",
+          "brand_zh": "速霸陸",
+          "display": "Subaru 速霸陸",
+          "highlight": false,
+          "model": "Levorg",
+          "sold": 2,
+          "sold_price_avg": 348000,
+          "sold_price_n": 2,
+          "listings": 62,
+          "listing_price_avg": 431474,
+          "listing_price_n": 57
+        }
+      ],
+      "hot_model": {
+        "brand": "Subaru",
+        "brand_zh": "速霸陸",
+        "display": "Subaru 速霸陸",
+        "highlight": false,
+        "model": "Forester",
+        "sold": 5,
+        "sold_price_avg": 328800,
+        "sold_price_n": 5,
+        "listings": 151,
+        "listing_price_avg": 321906,
+        "listing_price_n": 139
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Infiniti",
@@ -436,7 +1793,75 @@
       "sell_through_30d": 0.0232,
       "avg_days_listed": 45.7,
       "avg_days_to_sell": 38.6,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Infiniti",
+          "brand_zh": "極致",
+          "display": "Infiniti 極致",
+          "highlight": false,
+          "model": "Q50",
+          "sold": 3,
+          "sold_price_avg": 445333,
+          "sold_price_n": 3,
+          "listings": 49,
+          "listing_price_avg": 360489,
+          "listing_price_n": 45
+        },
+        {
+          "brand": "Infiniti",
+          "brand_zh": "極致",
+          "display": "Infiniti 極致",
+          "highlight": false,
+          "model": "QX50",
+          "sold": 2,
+          "sold_price_avg": 684000,
+          "sold_price_n": 2,
+          "listings": 72,
+          "listing_price_avg": 836913,
+          "listing_price_n": 69
+        },
+        {
+          "brand": "Infiniti",
+          "brand_zh": "極致",
+          "display": "Infiniti 極致",
+          "highlight": false,
+          "model": "Q30",
+          "sold": 1,
+          "sold_price_avg": 438000,
+          "sold_price_n": 1,
+          "listings": 78,
+          "listing_price_avg": 417720,
+          "listing_price_n": 75
+        }
+      ],
+      "hot_model": {
+        "brand": "Infiniti",
+        "brand_zh": "極致",
+        "display": "Infiniti 極致",
+        "highlight": false,
+        "model": "Q50",
+        "sold": 3,
+        "sold_price_avg": 445333,
+        "sold_price_n": 3,
+        "listings": 49,
+        "listing_price_avg": 360489,
+        "listing_price_n": 45
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": {
+        "brand": "Infiniti",
+        "brand_zh": "極致",
+        "display": "Infiniti 極致",
+        "highlight": false,
+        "model": "Q30",
+        "sold": 1,
+        "sold_price_avg": 438000,
+        "sold_price_n": 1,
+        "listings": 78,
+        "listing_price_avg": 417720,
+        "listing_price_n": 75
+      }
     },
     {
       "brand": "MG",
@@ -452,7 +1877,50 @@
       "sell_through_30d": 0.0086,
       "avg_days_listed": 40.5,
       "avg_days_to_sell": 31.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "MG",
+          "brand_zh": "名爵",
+          "display": "MG 名爵",
+          "highlight": false,
+          "model": "HS",
+          "sold": 1,
+          "sold_price_avg": 628000,
+          "sold_price_n": 1,
+          "listings": 111,
+          "listing_price_avg": 555528,
+          "listing_price_n": 108
+        },
+        {
+          "brand": "MG",
+          "brand_zh": "名爵",
+          "display": "MG 名爵",
+          "highlight": false,
+          "model": "HS PHEV",
+          "sold": 1,
+          "sold_price_avg": 598000,
+          "sold_price_n": 1,
+          "listings": 27,
+          "listing_price_avg": 597080,
+          "listing_price_n": 25
+        }
+      ],
+      "hot_model": {
+        "brand": "MG",
+        "brand_zh": "名爵",
+        "display": "MG 名爵",
+        "highlight": false,
+        "model": "HS",
+        "sold": 1,
+        "sold_price_avg": 628000,
+        "sold_price_n": 1,
+        "listings": 111,
+        "listing_price_avg": 555528,
+        "listing_price_n": 108
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Maserati",
@@ -468,7 +1936,63 @@
       "sell_through_30d": 0.0332,
       "avg_days_listed": 54.0,
       "avg_days_to_sell": 40.4,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Maserati",
+          "brand_zh": "瑪莎拉蒂",
+          "display": "Maserati 瑪莎拉蒂",
+          "highlight": false,
+          "model": "Ghibli",
+          "sold": 2,
+          "sold_price_avg": 660000,
+          "sold_price_n": 1,
+          "listings": 57,
+          "listing_price_avg": 818000,
+          "listing_price_n": 50
+        },
+        {
+          "brand": "Maserati",
+          "brand_zh": "瑪莎拉蒂",
+          "display": "Maserati 瑪莎拉蒂",
+          "highlight": false,
+          "model": "Levante",
+          "sold": 1,
+          "sold_price_avg": 1558000,
+          "sold_price_n": 1,
+          "listings": 27,
+          "listing_price_avg": 1333435,
+          "listing_price_n": 23
+        },
+        {
+          "brand": "Maserati",
+          "brand_zh": "瑪莎拉蒂",
+          "display": "Maserati 瑪莎拉蒂",
+          "highlight": false,
+          "model": "Ghibli SQ4",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 13,
+          "listing_price_avg": 836000,
+          "listing_price_n": 10
+        }
+      ],
+      "hot_model": {
+        "brand": "Maserati",
+        "brand_zh": "瑪莎拉蒂",
+        "display": "Maserati 瑪莎拉蒂",
+        "highlight": false,
+        "model": "Ghibli",
+        "sold": 2,
+        "sold_price_avg": 660000,
+        "sold_price_n": 1,
+        "listings": 57,
+        "listing_price_avg": 818000,
+        "listing_price_n": 50
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Peugeot",
@@ -484,7 +2008,50 @@
       "sell_through_30d": 0.0214,
       "avg_days_listed": 53.4,
       "avg_days_to_sell": 60.7,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Peugeot",
+          "brand_zh": "寶獅",
+          "display": "Peugeot 寶獅",
+          "highlight": false,
+          "model": "3008",
+          "sold": 2,
+          "sold_price_avg": 298000,
+          "sold_price_n": 2,
+          "listings": 38,
+          "listing_price_avg": 706382,
+          "listing_price_n": 34
+        },
+        {
+          "brand": "Peugeot",
+          "brand_zh": "寶獅",
+          "display": "Peugeot 寶獅",
+          "highlight": false,
+          "model": "408",
+          "sold": 1,
+          "sold_price_avg": 1128000,
+          "sold_price_n": 1,
+          "listings": 24,
+          "listing_price_avg": 973043,
+          "listing_price_n": 23
+        }
+      ],
+      "hot_model": {
+        "brand": "Peugeot",
+        "brand_zh": "寶獅",
+        "display": "Peugeot 寶獅",
+        "highlight": false,
+        "model": "3008",
+        "sold": 2,
+        "sold_price_avg": 298000,
+        "sold_price_n": 2,
+        "listings": 38,
+        "listing_price_avg": 706382,
+        "listing_price_n": 34
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Hino",
@@ -500,7 +2067,37 @@
       "sell_through_30d": 0.0532,
       "avg_days_listed": 45.9,
       "avg_days_to_sell": 26.1,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Hino",
+          "brand_zh": "日野",
+          "display": "Hino 日野",
+          "highlight": false,
+          "model": "300",
+          "sold": 7,
+          "sold_price_avg": 969714,
+          "sold_price_n": 7,
+          "listings": 128,
+          "listing_price_avg": 1041570,
+          "listing_price_n": 114
+        }
+      ],
+      "hot_model": {
+        "brand": "Hino",
+        "brand_zh": "日野",
+        "display": "Hino 日野",
+        "highlight": false,
+        "model": "300",
+        "sold": 7,
+        "sold_price_avg": 969714,
+        "sold_price_n": 7,
+        "listings": 128,
+        "listing_price_avg": 1041570,
+        "listing_price_n": 114
+      },
+      "hot_model_source": "sold",
+      "listing_leader": null
     },
     {
       "brand": "Ferrari",
@@ -516,7 +2113,50 @@
       "sell_through_30d": 0.0163,
       "avg_days_listed": 29.4,
       "avg_days_to_sell": 31.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Ferrari",
+          "brand_zh": "法拉利",
+          "display": "Ferrari 法拉利",
+          "highlight": false,
+          "model": "Roma",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 16,
+          "listing_price_avg": 10480000,
+          "listing_price_n": 1
+        },
+        {
+          "brand": "Ferrari",
+          "brand_zh": "法拉利",
+          "display": "Ferrari 法拉利",
+          "highlight": false,
+          "model": "Purosangue",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 10,
+          "listing_price_avg": 23380000,
+          "listing_price_n": 2
+        }
+      ],
+      "hot_model": {
+        "brand": "Ferrari",
+        "brand_zh": "法拉利",
+        "display": "Ferrari 法拉利",
+        "highlight": false,
+        "model": "Roma",
+        "sold": 1,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 16,
+        "listing_price_avg": 10480000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Lamborghini",
@@ -532,7 +2172,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 35.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Lamborghini",
+        "brand_zh": "藍寶堅尼",
+        "display": "Lamborghini 藍寶堅尼",
+        "highlight": false,
+        "model": "Urus",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 59,
+        "listing_price_avg": 9687867,
+        "listing_price_n": 15
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Lamborghini",
+        "brand_zh": "藍寶堅尼",
+        "display": "Lamborghini 藍寶堅尼",
+        "highlight": false,
+        "model": "Urus",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 59,
+        "listing_price_avg": 9687867,
+        "listing_price_n": 15
+      }
     },
     {
       "brand": "Bentley",
@@ -548,7 +2216,50 @@
       "sell_through_30d": 0.0359,
       "avg_days_listed": 46.3,
       "avg_days_to_sell": 29.5,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Bentley",
+          "brand_zh": "賓利",
+          "display": "Bentley 賓利",
+          "highlight": false,
+          "model": "Continental GT",
+          "sold": 3,
+          "sold_price_avg": 5188000,
+          "sold_price_n": 2,
+          "listings": 47,
+          "listing_price_avg": 2524000,
+          "listing_price_n": 23
+        },
+        {
+          "brand": "Bentley",
+          "brand_zh": "賓利",
+          "display": "Bentley 賓利",
+          "highlight": false,
+          "model": "Bentayga",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 17,
+          "listing_price_avg": 4822400,
+          "listing_price_n": 10
+        }
+      ],
+      "hot_model": {
+        "brand": "Bentley",
+        "brand_zh": "賓利",
+        "display": "Bentley 賓利",
+        "highlight": false,
+        "model": "Continental GT",
+        "sold": 3,
+        "sold_price_avg": 5188000,
+        "sold_price_n": 2,
+        "listings": 47,
+        "listing_price_avg": 2524000,
+        "listing_price_n": 23
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Jaguar",
@@ -564,7 +2275,37 @@
       "sell_through_30d": 0.0293,
       "avg_days_listed": 70.4,
       "avg_days_to_sell": 113.3,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Jaguar",
+          "brand_zh": "捷豹",
+          "display": "Jaguar 捷豹",
+          "highlight": false,
+          "model": "F-Pace",
+          "sold": 3,
+          "sold_price_avg": 1370000,
+          "sold_price_n": 1,
+          "listings": 23,
+          "listing_price_avg": 688824,
+          "listing_price_n": 17
+        }
+      ],
+      "hot_model": {
+        "brand": "Jaguar",
+        "brand_zh": "捷豹",
+        "display": "Jaguar 捷豹",
+        "highlight": false,
+        "model": "F-Pace",
+        "sold": 3,
+        "sold_price_avg": 1370000,
+        "sold_price_n": 1,
+        "listings": 23,
+        "listing_price_avg": 688824,
+        "listing_price_n": 17
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Isuzu",
@@ -580,7 +2321,50 @@
       "sell_through_30d": 0.0455,
       "avg_days_listed": 66.7,
       "avg_days_to_sell": 27.5,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Isuzu",
+          "brand_zh": "五十鈴",
+          "display": "Isuzu 五十鈴",
+          "highlight": false,
+          "model": "Elf",
+          "sold": 3,
+          "sold_price_avg": 438000,
+          "sold_price_n": 3,
+          "listings": 54,
+          "listing_price_avg": 648479,
+          "listing_price_n": 48
+        },
+        {
+          "brand": "Isuzu",
+          "brand_zh": "五十鈴",
+          "display": "Isuzu 五十鈴",
+          "highlight": false,
+          "model": "NLR",
+          "sold": 1,
+          "sold_price_avg": 1638000,
+          "sold_price_n": 1,
+          "listings": 30,
+          "listing_price_avg": 1087433,
+          "listing_price_n": 30
+        }
+      ],
+      "hot_model": {
+        "brand": "Isuzu",
+        "brand_zh": "五十鈴",
+        "display": "Isuzu 五十鈴",
+        "highlight": false,
+        "model": "Elf",
+        "sold": 3,
+        "sold_price_avg": 438000,
+        "sold_price_n": 3,
+        "listings": 54,
+        "listing_price_avg": 648479,
+        "listing_price_n": 48
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Smart",
@@ -596,7 +2380,50 @@
       "sell_through_30d": 0.0544,
       "avg_days_listed": 26.6,
       "avg_days_to_sell": 31.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Smart",
+          "brand_zh": "智慧",
+          "display": "Smart 智慧",
+          "highlight": false,
+          "model": "Forfour",
+          "sold": 3,
+          "sold_price_avg": 298000,
+          "sold_price_n": 2,
+          "listings": 35,
+          "listing_price_avg": 313029,
+          "listing_price_n": 35
+        },
+        {
+          "brand": "Smart",
+          "brand_zh": "智慧",
+          "display": "Smart 智慧",
+          "highlight": false,
+          "model": "Fortwo",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 34,
+          "listing_price_avg": 372625,
+          "listing_price_n": 16
+        }
+      ],
+      "hot_model": {
+        "brand": "Smart",
+        "brand_zh": "智慧",
+        "display": "Smart 智慧",
+        "highlight": false,
+        "model": "Forfour",
+        "sold": 3,
+        "sold_price_avg": 298000,
+        "sold_price_n": 2,
+        "listings": 35,
+        "listing_price_avg": 313029,
+        "listing_price_n": 35
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Rolls-Royce",
@@ -612,7 +2439,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 61.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Rolls-Royce",
+        "brand_zh": "勞斯萊斯",
+        "display": "Rolls-Royce 勞斯萊斯",
+        "highlight": false,
+        "model": "Cullinan",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 19,
+        "listing_price_avg": 14798000,
+        "listing_price_n": 7
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Rolls-Royce",
+        "brand_zh": "勞斯萊斯",
+        "display": "Rolls-Royce 勞斯萊斯",
+        "highlight": false,
+        "model": "Cullinan",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 19,
+        "listing_price_avg": 14798000,
+        "listing_price_n": 7
+      }
     },
     {
       "brand": "McLaren",
@@ -628,7 +2483,37 @@
       "sell_through_30d": 0.0213,
       "avg_days_listed": 47.3,
       "avg_days_to_sell": 31.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "McLaren",
+          "brand_zh": "麥拉倫",
+          "display": "McLaren 麥拉倫",
+          "highlight": false,
+          "model": "720S",
+          "sold": 1,
+          "sold_price_avg": 8180000,
+          "sold_price_n": 1,
+          "listings": 11,
+          "listing_price_avg": 8149333,
+          "listing_price_n": 6
+        }
+      ],
+      "hot_model": {
+        "brand": "McLaren",
+        "brand_zh": "麥拉倫",
+        "display": "McLaren 麥拉倫",
+        "highlight": false,
+        "model": "720S",
+        "sold": 1,
+        "sold_price_avg": 8180000,
+        "sold_price_n": 1,
+        "listings": 11,
+        "listing_price_avg": 8149333,
+        "listing_price_n": 6
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "DFSK",
@@ -644,7 +2529,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 54.2,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "DFSK",
+        "brand_zh": "東風小康",
+        "display": "DFSK 東風小康",
+        "highlight": false,
+        "model": "KingCab",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 28,
+        "listing_price_avg": 308893,
+        "listing_price_n": 28
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "DFSK",
+        "brand_zh": "東風小康",
+        "display": "DFSK 東風小康",
+        "highlight": false,
+        "model": "KingCab",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 28,
+        "listing_price_avg": 308893,
+        "listing_price_n": 28
+      }
     },
     {
       "brand": "Alfa Romeo",
@@ -660,7 +2573,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 53.8,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Alfa Romeo",
+        "brand_zh": "愛快羅密歐",
+        "display": "Alfa Romeo 愛快羅密歐",
+        "highlight": false,
+        "model": "Giulia",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 10,
+        "listing_price_avg": 1257143,
+        "listing_price_n": 7
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Alfa Romeo",
+        "brand_zh": "愛快羅密歐",
+        "display": "Alfa Romeo 愛快羅密歐",
+        "highlight": false,
+        "model": "Giulia",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 10,
+        "listing_price_avg": 1257143,
+        "listing_price_n": 7
+      }
     },
     {
       "brand": "Aston Martin",
@@ -676,7 +2617,50 @@
       "sell_through_30d": 0.0597,
       "avg_days_listed": 37.4,
       "avg_days_to_sell": 30.5,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Aston Martin",
+          "brand_zh": "奧斯頓馬丁",
+          "display": "Aston Martin 奧斯頓馬丁",
+          "highlight": false,
+          "model": "Vantage",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 8,
+          "listing_price_avg": 5880000,
+          "listing_price_n": 1
+        },
+        {
+          "brand": "Aston Martin",
+          "brand_zh": "奧斯頓馬丁",
+          "display": "Aston Martin 奧斯頓馬丁",
+          "highlight": false,
+          "model": "DBX",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 4,
+          "listing_price_avg": 8680000,
+          "listing_price_n": 1
+        }
+      ],
+      "hot_model": {
+        "brand": "Aston Martin",
+        "brand_zh": "奧斯頓馬丁",
+        "display": "Aston Martin 奧斯頓馬丁",
+        "highlight": false,
+        "model": "Vantage",
+        "sold": 1,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 8,
+        "listing_price_avg": 5880000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Citroen",
@@ -692,7 +2676,37 @@
       "sell_through_30d": 0.0357,
       "avg_days_listed": 35.1,
       "avg_days_to_sell": 7.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Citroen",
+          "brand_zh": "雪鐵龍",
+          "display": "Citroen 雪鐵龍",
+          "highlight": false,
+          "model": "Berlingo長軸版",
+          "sold": 1,
+          "sold_price_avg": 758000,
+          "sold_price_n": 1,
+          "listings": 20,
+          "listing_price_avg": 751500,
+          "listing_price_n": 20
+        }
+      ],
+      "hot_model": {
+        "brand": "Citroen",
+        "brand_zh": "雪鐵龍",
+        "display": "Citroen 雪鐵龍",
+        "highlight": false,
+        "model": "Berlingo長軸版",
+        "sold": 1,
+        "sold_price_avg": 758000,
+        "sold_price_n": 1,
+        "listings": 20,
+        "listing_price_avg": 751500,
+        "listing_price_n": 20
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Jeep",
@@ -708,7 +2722,37 @@
       "sell_through_30d": 0.0364,
       "avg_days_listed": 45.0,
       "avg_days_to_sell": 6.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "Jeep",
+          "brand_zh": "吉普",
+          "display": "Jeep 吉普",
+          "highlight": false,
+          "model": "Wrangler",
+          "sold": 1,
+          "sold_price_avg": 1988000,
+          "sold_price_n": 1,
+          "listings": 19,
+          "listing_price_avg": 1335056,
+          "listing_price_n": 18
+        }
+      ],
+      "hot_model": {
+        "brand": "Jeep",
+        "brand_zh": "吉普",
+        "display": "Jeep 吉普",
+        "highlight": false,
+        "model": "Wrangler",
+        "sold": 1,
+        "sold_price_avg": 1988000,
+        "sold_price_n": 1,
+        "listings": 19,
+        "listing_price_avg": 1335056,
+        "listing_price_n": 18
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": null
     },
     {
       "brand": "Fiat",
@@ -724,7 +2768,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 34.1,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Fiat",
+        "brand_zh": "飛雅特",
+        "display": "Fiat 飛雅特",
+        "highlight": false,
+        "model": "500",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 13,
+        "listing_price_avg": 583250,
+        "listing_price_n": 8
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Fiat",
+        "brand_zh": "飛雅特",
+        "display": "Fiat 飛雅特",
+        "highlight": false,
+        "model": "500",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 13,
+        "listing_price_avg": 583250,
+        "listing_price_n": 8
+      }
     },
     {
       "brand": "Chevrolet",
@@ -740,7 +2812,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 31.6,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Chevrolet",
+        "brand_zh": "雪佛蘭",
+        "display": "Chevrolet 雪佛蘭",
+        "highlight": false,
+        "model": "Camaro",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 6,
+        "listing_price_avg": 1019333,
+        "listing_price_n": 3
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Chevrolet",
+        "brand_zh": "雪佛蘭",
+        "display": "Chevrolet 雪佛蘭",
+        "highlight": false,
+        "model": "Camaro",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 6,
+        "listing_price_avg": 1019333,
+        "listing_price_n": 3
+      }
     },
     {
       "brand": "Daihatsu",
@@ -756,7 +2856,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 24.4,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Daihatsu",
+        "brand_zh": "大發",
+        "display": "Daihatsu 大發",
+        "highlight": false,
+        "model": "Terios",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 10,
+        "listing_price_avg": 297000,
+        "listing_price_n": 9
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Daihatsu",
+        "brand_zh": "大發",
+        "display": "Daihatsu 大發",
+        "highlight": false,
+        "model": "Terios",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 10,
+        "listing_price_avg": 297000,
+        "listing_price_n": 9
+      }
     },
     {
       "brand": "Abarth",
@@ -772,7 +2900,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 46.4,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Abarth",
+        "brand_zh": "阿巴斯",
+        "display": "Abarth 阿巴斯",
+        "highlight": false,
+        "model": "695",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 2575500,
+        "listing_price_n": 4
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Abarth",
+        "brand_zh": "阿巴斯",
+        "display": "Abarth 阿巴斯",
+        "highlight": false,
+        "model": "695",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 2575500,
+        "listing_price_n": 4
+      }
     },
     {
       "brand": "Lotus",
@@ -788,7 +2944,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 42.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Lotus",
+        "brand_zh": "蓮花",
+        "display": "Lotus 蓮花",
+        "highlight": false,
+        "model": "Emira",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 6,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Lotus",
+        "brand_zh": "蓮花",
+        "display": "Lotus 蓮花",
+        "highlight": false,
+        "model": "Emira",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 6,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      }
     },
     {
       "brand": "IVECO",
@@ -804,7 +2988,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 132.8,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "IVECO",
+        "brand_zh": "IVECO",
+        "display": "IVECO",
+        "highlight": false,
+        "model": "IVECO",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 7,
+        "listing_price_avg": 831333,
+        "listing_price_n": 6
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "IVECO",
+        "brand_zh": "IVECO",
+        "display": "IVECO",
+        "highlight": false,
+        "model": "IVECO",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 7,
+        "listing_price_avg": 831333,
+        "listing_price_n": 6
+      }
     },
     {
       "brand": "Opel",
@@ -820,7 +3032,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 30.2,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Opel",
+        "brand_zh": "歐寶",
+        "display": "Opel 歐寶",
+        "highlight": false,
+        "model": "Astra",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 4,
+        "listing_price_avg": 400333,
+        "listing_price_n": 3
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Opel",
+        "brand_zh": "歐寶",
+        "display": "Opel 歐寶",
+        "highlight": false,
+        "model": "Astra",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 4,
+        "listing_price_avg": 400333,
+        "listing_price_n": 3
+      }
     },
     {
       "brand": "Hummer",
@@ -836,7 +3076,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 28.8,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Hummer",
+        "brand_zh": "悍馬",
+        "display": "Hummer 悍馬",
+        "highlight": false,
+        "model": "H3",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 8,
+        "listing_price_avg": 494500,
+        "listing_price_n": 8
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Hummer",
+        "brand_zh": "悍馬",
+        "display": "Hummer 悍馬",
+        "highlight": false,
+        "model": "H3",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 8,
+        "listing_price_avg": 494500,
+        "listing_price_n": 8
+      }
     },
     {
       "brand": "Acura",
@@ -852,7 +3120,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 89.9,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Acura",
+        "brand_zh": "謳歌",
+        "display": "Acura 謳歌",
+        "highlight": false,
+        "model": "RDX",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 1621333,
+        "listing_price_n": 3
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Acura",
+        "brand_zh": "謳歌",
+        "display": "Acura 謳歌",
+        "highlight": false,
+        "model": "RDX",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 1621333,
+        "listing_price_n": 3
+      }
     },
     {
       "brand": "Mahindra",
@@ -868,7 +3164,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 61.6,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Mahindra",
+        "brand_zh": "馬欣德拉",
+        "display": "Mahindra 馬欣德拉",
+        "highlight": false,
+        "model": "Scorpio",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 359750,
+        "listing_price_n": 4
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Mahindra",
+        "brand_zh": "馬欣德拉",
+        "display": "Mahindra 馬欣德拉",
+        "highlight": false,
+        "model": "Scorpio",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 5,
+        "listing_price_avg": 359750,
+        "listing_price_n": 4
+      }
     },
     {
       "brand": "BRABUS",
@@ -884,7 +3208,49 @@
       "sell_through_30d": 0.1667,
       "avg_days_listed": 21.0,
       "avg_days_to_sell": 31.0,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [
+        {
+          "brand": "BRABUS",
+          "brand_zh": "巴博斯",
+          "display": "BRABUS 巴博斯",
+          "highlight": false,
+          "model": "XLP 900",
+          "sold": 1,
+          "sold_price_avg": null,
+          "sold_price_n": 0,
+          "listings": 1,
+          "listing_price_avg": null,
+          "listing_price_n": 0
+        }
+      ],
+      "hot_model": {
+        "brand": "BRABUS",
+        "brand_zh": "巴博斯",
+        "display": "BRABUS 巴博斯",
+        "highlight": false,
+        "model": "XLP 900",
+        "sold": 1,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "sold_small_sample",
+      "listing_leader": {
+        "brand": "BRABUS",
+        "brand_zh": "巴博斯",
+        "display": "BRABUS 巴博斯",
+        "highlight": false,
+        "model": "X-class D4",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 1330000,
+        "listing_price_n": 2
+      }
     },
     {
       "brand": "Cadillac",
@@ -900,7 +3266,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 17.5,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Cadillac",
+        "brand_zh": "凱迪拉克",
+        "display": "Cadillac 凱迪拉克",
+        "highlight": false,
+        "model": "Escalade",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 988000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Cadillac",
+        "brand_zh": "凱迪拉克",
+        "display": "Cadillac 凱迪拉克",
+        "highlight": false,
+        "model": "Escalade",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 988000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Saab",
@@ -916,7 +3310,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 65.7,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Saab",
+        "brand_zh": "紳寶",
+        "display": "Saab 紳寶",
+        "highlight": false,
+        "model": "9-3",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 148000,
+        "listing_price_n": 2
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Saab",
+        "brand_zh": "紳寶",
+        "display": "Saab 紳寶",
+        "highlight": false,
+        "model": "9-3",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 148000,
+        "listing_price_n": 2
+      }
     },
     {
       "brand": "Dodge",
@@ -932,7 +3354,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 34.6,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Dodge",
+        "brand_zh": "道奇",
+        "display": "Dodge 道奇",
+        "highlight": false,
+        "model": "Challenger",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 750000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Dodge",
+        "brand_zh": "道奇",
+        "display": "Dodge 道奇",
+        "highlight": false,
+        "model": "Challenger",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 750000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Caterham",
@@ -948,7 +3398,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 81.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Caterham",
+        "brand_zh": "凱特漢姆",
+        "display": "Caterham 凱特漢姆",
+        "highlight": false,
+        "model": "Seven",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 15684500,
+        "listing_price_n": 2
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Caterham",
+        "brand_zh": "凱特漢姆",
+        "display": "Caterham 凱特漢姆",
+        "highlight": false,
+        "model": "Seven",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 3,
+        "listing_price_avg": 15684500,
+        "listing_price_n": 2
+      }
     },
     {
       "brand": "Chrysler",
@@ -964,7 +3442,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 20.3,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Chrysler",
+        "brand_zh": "克萊斯勒",
+        "display": "Chrysler 克萊斯勒",
+        "highlight": false,
+        "model": "300C",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 168500,
+        "listing_price_n": 2
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Chrysler",
+        "brand_zh": "克萊斯勒",
+        "display": "Chrysler 克萊斯勒",
+        "highlight": false,
+        "model": "300C",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 168500,
+        "listing_price_n": 2
+      }
     },
     {
       "brand": "Ssangyong",
@@ -980,7 +3486,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 22.3,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Ssangyong",
+        "brand_zh": "雙龍",
+        "display": "Ssangyong 雙龍",
+        "highlight": false,
+        "model": "Kyron",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 189000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Ssangyong",
+        "brand_zh": "雙龍",
+        "display": "Ssangyong 雙龍",
+        "highlight": false,
+        "model": "Kyron",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 189000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Foton",
@@ -996,7 +3530,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 57.5,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Foton",
+        "brand_zh": "福田",
+        "display": "Foton 福田",
+        "highlight": false,
+        "model": "Aumark",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 298500,
+        "listing_price_n": 2
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Foton",
+        "brand_zh": "福田",
+        "display": "Foton 福田",
+        "highlight": false,
+        "model": "Aumark",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 2,
+        "listing_price_avg": 298500,
+        "listing_price_n": 2
+      }
     },
     {
       "brand": "Ineos",
@@ -1012,7 +3574,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 31.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Ineos",
+        "brand_zh": "英奈斯",
+        "display": "Ineos 英奈斯",
+        "highlight": false,
+        "model": "Grenadier",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 3280000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Ineos",
+        "brand_zh": "英奈斯",
+        "display": "Ineos 英奈斯",
+        "highlight": false,
+        "model": "Grenadier",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 3280000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Yueloong",
@@ -1028,7 +3618,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 21.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Yueloong",
+        "brand_zh": "裕隆",
+        "display": "Yueloong 裕隆",
+        "highlight": false,
+        "model": "YLN-303T",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 138000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Yueloong",
+        "brand_zh": "裕隆",
+        "display": "Yueloong 裕隆",
+        "highlight": false,
+        "model": "YLN-303T",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 138000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Asia",
@@ -1044,7 +3662,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 1262.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Asia",
+        "brand_zh": "亞細亞",
+        "display": "Asia 亞細亞",
+        "highlight": false,
+        "model": "Rocsta",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 280000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Asia",
+        "brand_zh": "亞細亞",
+        "display": "Asia 亞細亞",
+        "highlight": false,
+        "model": "Rocsta",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 280000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "BYD",
@@ -1060,7 +3706,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 11.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "BYD",
+        "brand_zh": "比亞迪",
+        "display": "BYD 比亞迪",
+        "highlight": false,
+        "model": "E6",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 225000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "BYD",
+        "brand_zh": "比亞迪",
+        "display": "BYD 比亞迪",
+        "highlight": false,
+        "model": "E6",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 225000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Buick",
@@ -1076,7 +3750,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 57.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Buick",
+        "brand_zh": "別克",
+        "display": "Buick 別克",
+        "highlight": false,
+        "model": "LaCrosse",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 90000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Buick",
+        "brand_zh": "別克",
+        "display": "Buick 別克",
+        "highlight": false,
+        "model": "LaCrosse",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 90000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Foxtron",
@@ -1092,7 +3794,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 8.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Foxtron",
+        "brand_zh": "鴻華",
+        "display": "Foxtron 鴻華",
+        "highlight": false,
+        "model": "Bria",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 798000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Foxtron",
+        "brand_zh": "鴻華",
+        "display": "Foxtron 鴻華",
+        "highlight": false,
+        "model": "Bria",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 798000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "GMC",
@@ -1108,7 +3838,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 50.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "GMC",
+        "brand_zh": "GMC",
+        "display": "GMC",
+        "highlight": false,
+        "model": "SAVANA",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "GMC",
+        "brand_zh": "GMC",
+        "display": "GMC",
+        "highlight": false,
+        "model": "SAVANA",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      }
     },
     {
       "brand": "Lincoln",
@@ -1124,7 +3882,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 16.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Lincoln",
+        "brand_zh": "林肯",
+        "display": "Lincoln 林肯",
+        "highlight": false,
+        "model": "Town Car",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Lincoln",
+        "brand_zh": "林肯",
+        "display": "Lincoln 林肯",
+        "highlight": false,
+        "model": "Town Car",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      }
     },
     {
       "brand": "Morgan",
@@ -1140,7 +3926,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 424.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Morgan",
+        "brand_zh": "摩根",
+        "display": "Morgan 摩根",
+        "highlight": false,
+        "model": "Aero",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Morgan",
+        "brand_zh": "摩根",
+        "display": "Morgan 摩根",
+        "highlight": false,
+        "model": "Aero",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      }
     },
     {
       "brand": "Proton",
@@ -1156,7 +3970,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 12.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Proton",
+        "brand_zh": "寶騰",
+        "display": "Proton 寶騰",
+        "highlight": false,
+        "model": "Jumbuck",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 50000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Proton",
+        "brand_zh": "寶騰",
+        "display": "Proton 寶騰",
+        "highlight": false,
+        "model": "Jumbuck",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 50000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Renault",
@@ -1172,7 +4014,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 8.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Renault",
+        "brand_zh": "雷諾",
+        "display": "Renault 雷諾",
+        "highlight": false,
+        "model": "Megane",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 188000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Renault",
+        "brand_zh": "雷諾",
+        "display": "Renault 雷諾",
+        "highlight": false,
+        "model": "Megane",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 188000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Scion",
@@ -1188,7 +4058,35 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 37.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Scion",
+        "brand_zh": "Scion",
+        "display": "Scion",
+        "highlight": false,
+        "model": "FR-S",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 760000,
+        "listing_price_n": 1
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Scion",
+        "brand_zh": "Scion",
+        "display": "Scion",
+        "highlight": false,
+        "model": "FR-S",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": 760000,
+        "listing_price_n": 1
+      }
     },
     {
       "brand": "Tobe",
@@ -1204,9 +4102,308 @@
       "sell_through_30d": 0.0,
       "avg_days_listed": 9.0,
       "avg_days_to_sell": null,
-      "window_days": 2
+      "window_days": 2,
+      "hot_models": [],
+      "hot_model": {
+        "brand": "Tobe",
+        "brand_zh": "酷比",
+        "display": "Tobe 酷比",
+        "highlight": false,
+        "model": "M'car",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      },
+      "hot_model_source": "listings_fallback",
+      "listing_leader": {
+        "brand": "Tobe",
+        "brand_zh": "酷比",
+        "display": "Tobe 酷比",
+        "highlight": false,
+        "model": "M'car",
+        "sold": 0,
+        "sold_price_avg": null,
+        "sold_price_n": 0,
+        "listings": 1,
+        "listing_price_avg": null,
+        "listing_price_n": 0
+      }
     }
   ],
+  "hot_models_market": [
+    {
+      "brand": "Mercedes-Benz",
+      "brand_zh": "賓士",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false,
+      "model": "C-Class",
+      "sold": 30,
+      "sold_price_avg": 1013962,
+      "sold_price_n": 26,
+      "listings": 1154,
+      "listing_price_avg": 829649,
+      "listing_price_n": 992
+    },
+    {
+      "brand": "Toyota",
+      "brand_zh": "豐田",
+      "display": "Toyota 豐田",
+      "highlight": false,
+      "model": "Corolla Altis",
+      "sold": 28,
+      "sold_price_avg": 353308,
+      "sold_price_n": 26,
+      "listings": 1045,
+      "listing_price_avg": 332684,
+      "listing_price_n": 950
+    },
+    {
+      "brand": "Toyota",
+      "brand_zh": "豐田",
+      "display": "Toyota 豐田",
+      "highlight": false,
+      "model": "RAV4",
+      "sold": 26,
+      "sold_price_avg": 448538,
+      "sold_price_n": 26,
+      "listings": 593,
+      "listing_price_avg": 520206,
+      "listing_price_n": 528
+    },
+    {
+      "brand": "Ford",
+      "brand_zh": "福特",
+      "display": "Ford 福特",
+      "highlight": false,
+      "model": "Focus",
+      "sold": 20,
+      "sold_price_avg": 436111,
+      "sold_price_n": 18,
+      "listings": 969,
+      "listing_price_avg": 410508,
+      "listing_price_n": 927
+    },
+    {
+      "brand": "BMW",
+      "brand_zh": "寶馬",
+      "display": "BMW 寶馬",
+      "highlight": false,
+      "model": "3-Series",
+      "sold": 20,
+      "sold_price_avg": 1258000,
+      "sold_price_n": 18,
+      "listings": 857,
+      "listing_price_avg": 855854,
+      "listing_price_n": 773
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brand_zh": "賓士",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false,
+      "model": "E-Class",
+      "sold": 19,
+      "sold_price_avg": 988625,
+      "sold_price_n": 16,
+      "listings": 1019,
+      "listing_price_avg": 1137388,
+      "listing_price_n": 872
+    },
+    {
+      "brand": "Volkswagen",
+      "brand_zh": "福斯",
+      "display": "Volkswagen 福斯",
+      "highlight": false,
+      "model": "Golf",
+      "sold": 16,
+      "sold_price_avg": 610714,
+      "sold_price_n": 14,
+      "listings": 658,
+      "listing_price_avg": 686021,
+      "listing_price_n": 619
+    },
+    {
+      "brand": "BMW",
+      "brand_zh": "寶馬",
+      "display": "BMW 寶馬",
+      "highlight": false,
+      "model": "5-Series",
+      "sold": 16,
+      "sold_price_avg": 1170786,
+      "sold_price_n": 14,
+      "listings": 607,
+      "listing_price_avg": 846453,
+      "listing_price_n": 543
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brand_zh": "賓士",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false,
+      "model": "CLA",
+      "sold": 16,
+      "sold_price_avg": 1207000,
+      "sold_price_n": 15,
+      "listings": 553,
+      "listing_price_avg": 986514,
+      "listing_price_n": 481
+    },
+    {
+      "brand": "Nissan",
+      "brand_zh": "日產",
+      "display": "Nissan 日產",
+      "highlight": false,
+      "model": "Sentra",
+      "sold": 15,
+      "sold_price_avg": 355857,
+      "sold_price_n": 14,
+      "listings": 339,
+      "listing_price_avg": 361060,
+      "listing_price_n": 317
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brand_zh": "賓士",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false,
+      "model": "GLC",
+      "sold": 14,
+      "sold_price_avg": 1676462,
+      "sold_price_n": 13,
+      "listings": 764,
+      "listing_price_avg": 1557785,
+      "listing_price_n": 585
+    },
+    {
+      "brand": "Mazda",
+      "brand_zh": "馬自達",
+      "display": "Mazda 馬自達",
+      "highlight": false,
+      "model": "3",
+      "sold": 14,
+      "sold_price_avg": 378429,
+      "sold_price_n": 14,
+      "listings": 567,
+      "listing_price_avg": 342734,
+      "listing_price_n": 527
+    },
+    {
+      "brand": "BMW",
+      "brand_zh": "寶馬",
+      "display": "BMW 寶馬",
+      "highlight": false,
+      "model": "2-Series",
+      "sold": 14,
+      "sold_price_avg": 906357,
+      "sold_price_n": 14,
+      "listings": 346,
+      "listing_price_avg": 853391,
+      "listing_price_n": 322
+    },
+    {
+      "brand": "Porsche",
+      "brand_zh": "保時捷",
+      "display": "Porsche 保時捷",
+      "highlight": true,
+      "model": "Cayenne",
+      "sold": 13,
+      "sold_price_avg": 1805714,
+      "sold_price_n": 7,
+      "listings": 453,
+      "listing_price_avg": 1797166,
+      "listing_price_n": 374
+    },
+    {
+      "brand": "Toyota",
+      "brand_zh": "豐田",
+      "display": "Toyota 豐田",
+      "highlight": false,
+      "model": "Corolla Cross",
+      "sold": 13,
+      "sold_price_avg": 599846,
+      "sold_price_n": 13,
+      "listings": 403,
+      "listing_price_avg": 582481,
+      "listing_price_n": 376
+    },
+    {
+      "brand": "Volkswagen",
+      "brand_zh": "福斯",
+      "display": "Volkswagen 福斯",
+      "highlight": false,
+      "model": "Tiguan",
+      "sold": 12,
+      "sold_price_avg": 527444,
+      "sold_price_n": 9,
+      "listings": 497,
+      "listing_price_avg": 623061,
+      "listing_price_n": 475
+    },
+    {
+      "brand": "Lexus",
+      "brand_zh": "凌志",
+      "display": "Lexus 凌志",
+      "highlight": false,
+      "model": "NX",
+      "sold": 12,
+      "sold_price_avg": 1083600,
+      "sold_price_n": 10,
+      "listings": 398,
+      "listing_price_avg": 951318,
+      "listing_price_n": 374
+    },
+    {
+      "brand": "Porsche",
+      "brand_zh": "保時捷",
+      "display": "Porsche 保時捷",
+      "highlight": true,
+      "model": "Macan",
+      "sold": 11,
+      "sold_price_avg": 1424250,
+      "sold_price_n": 8,
+      "listings": 379,
+      "listing_price_avg": 1483270,
+      "listing_price_n": 311
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brand_zh": "賓士",
+      "display": "Mercedes-Benz 賓士",
+      "highlight": false,
+      "model": "GLE",
+      "sold": 11,
+      "sold_price_avg": 1480000,
+      "sold_price_n": 9,
+      "listings": 322,
+      "listing_price_avg": 1790104,
+      "listing_price_n": 249
+    },
+    {
+      "brand": "Lexus",
+      "brand_zh": "凌志",
+      "display": "Lexus 凌志",
+      "highlight": false,
+      "model": "ES",
+      "sold": 11,
+      "sold_price_avg": 872500,
+      "sold_price_n": 8,
+      "listings": 301,
+      "listing_price_avg": 811208,
+      "listing_price_n": 284
+    }
+  ],
+  "hot_models_meta": {
+    "window_days": 2,
+    "compare_days": 1,
+    "window_start": "2026-11-12",
+    "window_end": "2026-11-13",
+    "min_sold_sample": 5,
+    "price_min": 50000,
+    "price_max": 50000000
+  },
   "changes": {
     "compared_to": "2026-11-12",
     "arrived_count": 1222,
