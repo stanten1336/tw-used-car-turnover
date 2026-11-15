@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T08:28:16+08:00",
+  "updated": "2026-11-15T08:29:11+08:00",
   "days": [
     {
       "date": "2026-11-12",
@@ -18,449 +18,15 @@
       "listings": 39868,
       "arrived": 1217,
       "sold": 1005
+    },
+    {
+      "date": "2026-11-15",
+      "listings": 39677,
+      "arrived": 756,
+      "sold": 947
     }
   ],
   "brands": {
-    "Chevrolet": [
-      {
-        "date": "2026-11-12",
-        "listings": 14,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 14,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 14,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Lexus": [
-      {
-        "date": "2026-11-12",
-        "listings": 1710,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1728,
-        "arrived": 57,
-        "sold": 39
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1744,
-        "arrived": 61,
-        "sold": 45
-      }
-    ],
-    "Tesla": [
-      {
-        "date": "2026-11-12",
-        "listings": 437,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 440,
-        "arrived": 17,
-        "sold": 14
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 433,
-        "arrived": 20,
-        "sold": 27
-      }
-    ],
-    "Land Rover": [
-      {
-        "date": "2026-11-12",
-        "listings": 457,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 459,
-        "arrived": 11,
-        "sold": 9
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 460,
-        "arrived": 10,
-        "sold": 9
-      }
-    ],
-    "Yueloong": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 2,
-        "arrived": 1,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 2,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Mini": [
-      {
-        "date": "2026-11-12",
-        "listings": 507,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 505,
-        "arrived": 15,
-        "sold": 17
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 509,
-        "arrived": 17,
-        "sold": 13
-      }
-    ],
-    "Ferrari": [
-      {
-        "date": "2026-11-12",
-        "listings": 123,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 123,
-        "arrived": 2,
-        "sold": 2
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 120,
-        "arrived": 3,
-        "sold": 6
-      }
-    ],
-    "Proton": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Subaru": [
-      {
-        "date": "2026-11-12",
-        "listings": 421,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 416,
-        "arrived": 8,
-        "sold": 13
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 419,
-        "arrived": 10,
-        "sold": 7
-      }
-    ],
-    "Suzuki": [
-      {
-        "date": "2026-11-12",
-        "listings": 495,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 512,
-        "arrived": 25,
-        "sold": 8
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 528,
-        "arrived": 27,
-        "sold": 11
-      }
-    ],
-    "Lamborghini": [
-      {
-        "date": "2026-11-12",
-        "listings": 118,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 122,
-        "arrived": 4,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 120,
-        "arrived": 3,
-        "sold": 5
-      }
-    ],
-    "Peugeot": [
-      {
-        "date": "2026-11-12",
-        "listings": 137,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 143,
-        "arrived": 9,
-        "sold": 3
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 143,
-        "arrived": 4,
-        "sold": 4
-      }
-    ],
-    "Aston Martin": [
-      {
-        "date": "2026-11-12",
-        "listings": 34,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 33,
-        "arrived": 1,
-        "sold": 2
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 32,
-        "arrived": 0,
-        "sold": 1
-      }
-    ],
-    "Saab": [
-      {
-        "date": "2026-11-12",
-        "listings": 6,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 6,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 6,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Rolls-Royce": [
-      {
-        "date": "2026-11-12",
-        "listings": 59,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 61,
-        "arrived": 2,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 60,
-        "arrived": 1,
-        "sold": 2
-      }
-    ],
-    "Abarth": [
-      {
-        "date": "2026-11-12",
-        "listings": 13,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 13,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 13,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "CMC": [
-      {
-        "date": "2026-11-12",
-        "listings": 548,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 550,
-        "arrived": 13,
-        "sold": 11
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 554,
-        "arrived": 12,
-        "sold": 8
-      }
-    ],
-    "Honda": [
-      {
-        "date": "2026-11-12",
-        "listings": 1719,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1755,
-        "arrived": 78,
-        "sold": 42
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1774,
-        "arrived": 62,
-        "sold": 43
-      }
-    ],
-    "Morgan": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "BRABUS": [
-      {
-        "date": "2026-11-12",
-        "listings": 6,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 6,
-        "arrived": 1,
-        "sold": 1
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 6,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Ford": [
-      {
-        "date": "2026-11-12",
-        "listings": 2008,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 2031,
-        "arrived": 62,
-        "sold": 39
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 2046,
-        "arrived": 69,
-        "sold": 54
-      }
-    ],
-    "Opel": [
-      {
-        "date": "2026-11-12",
-        "listings": 10,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 10,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 10,
-        "arrived": 1,
-        "sold": 1
-      }
-    ],
     "Chrysler": [
       {
         "date": "2026-11-12",
@@ -479,104 +45,36 @@
         "listings": 3,
         "arrived": 0,
         "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 3,
+        "arrived": 0,
+        "sold": 0
       }
     ],
-    "Mahindra": [
+    "Foton": [
       {
         "date": "2026-11-12",
-        "listings": 7,
+        "listings": 2,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 7,
+        "listings": 2,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 6,
-        "arrived": 0,
-        "sold": 1
-      }
-    ],
-    "Hino": [
-      {
-        "date": "2026-11-12",
-        "listings": 132,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 131,
-        "arrived": 6,
-        "sold": 7
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 129,
-        "arrived": 0,
-        "sold": 2
-      }
-    ],
-    "Kia": [
-      {
-        "date": "2026-11-12",
-        "listings": 448,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 443,
-        "arrived": 6,
-        "sold": 11
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 443,
-        "arrived": 4,
-        "sold": 4
-      }
-    ],
-    "McLaren": [
-      {
-        "date": "2026-11-12",
-        "listings": 46,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 48,
-        "arrived": 3,
-        "sold": 1
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 51,
-        "arrived": 5,
-        "sold": 2
-      }
-    ],
-    "Buick": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
+        "listings": 2,
         "arrived": 0,
         "sold": 0
       },
       {
-        "date": "2026-11-14",
-        "listings": 1,
+        "date": "2026-11-15",
+        "listings": 2,
         "arrived": 0,
         "sold": 0
       }
@@ -599,85 +97,63 @@
         "listings": 1249,
         "arrived": 39,
         "sold": 34
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1257,
+        "arrived": 21,
+        "sold": 13
       }
     ],
-    "Luxgen": [
+    "Maserati": [
       {
         "date": "2026-11-12",
-        "listings": 447,
+        "listings": 211,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 444,
-        "arrived": 11,
-        "sold": 14
+        "listings": 211,
+        "arrived": 7,
+        "sold": 7
       },
       {
         "date": "2026-11-14",
-        "listings": 446,
-        "arrived": 19,
-        "sold": 17
-      }
-    ],
-    "IVECO": [
-      {
-        "date": "2026-11-12",
-        "listings": 11,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 12,
-        "arrived": 1,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 12,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Asia": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Bentley": [
-      {
-        "date": "2026-11-12",
-        "listings": 112,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 111,
-        "arrived": 3,
-        "sold": 4
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 114,
+        "listings": 211,
         "arrived": 6,
+        "sold": 6
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 208,
+        "arrived": 2,
+        "sold": 5
+      }
+    ],
+    "Hino": [
+      {
+        "date": "2026-11-12",
+        "listings": 132,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 131,
+        "arrived": 6,
+        "sold": 7
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 129,
+        "arrived": 0,
+        "sold": 2
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 126,
+        "arrived": 0,
         "sold": 3
       }
     ],
@@ -699,304 +175,218 @@
         "listings": 734,
         "arrived": 16,
         "sold": 18
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 733,
+        "arrived": 11,
+        "sold": 12
       }
     ],
-    "Ineos": [
+    "Tesla": [
       {
         "date": "2026-11-12",
-        "listings": 2,
+        "listings": 437,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 2,
-        "arrived": 0,
-        "sold": 0
+        "listings": 440,
+        "arrived": 17,
+        "sold": 14
       },
       {
         "date": "2026-11-14",
-        "listings": 2,
-        "arrived": 0,
-        "sold": 0
+        "listings": 433,
+        "arrived": 20,
+        "sold": 27
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 437,
+        "arrived": 14,
+        "sold": 10
       }
     ],
-    "Infiniti": [
+    "Ferrari": [
       {
         "date": "2026-11-12",
-        "listings": 303,
+        "listings": 123,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 300,
-        "arrived": 4,
-        "sold": 7
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 293,
-        "arrived": 6,
-        "sold": 13
-      }
-    ],
-    "DFSK": [
-      {
-        "date": "2026-11-12",
-        "listings": 40,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 40,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 42,
+        "listings": 123,
         "arrived": 2,
-        "sold": 0
-      }
-    ],
-    "GMC": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "BMW": [
-      {
-        "date": "2026-11-12",
-        "listings": 4702,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 4723,
-        "arrived": 130,
-        "sold": 109
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 4761,
-        "arrived": 143,
-        "sold": 105
-      }
-    ],
-    "Smart": [
-      {
-        "date": "2026-11-12",
-        "listings": 75,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 72,
-        "arrived": 1,
-        "sold": 4
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 71,
-        "arrived": 2,
-        "sold": 3
-      }
-    ],
-    "Alfa Romeo": [
-      {
-        "date": "2026-11-12",
-        "listings": 32,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 33,
-        "arrived": 1,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 32,
-        "arrived": 0,
-        "sold": 1
-      }
-    ],
-    "Audi": [
-      {
-        "date": "2026-11-12",
-        "listings": 1018,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1007,
-        "arrived": 13,
-        "sold": 24
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1012,
-        "arrived": 30,
-        "sold": 25
-      }
-    ],
-    "Foton": [
-      {
-        "date": "2026-11-12",
-        "listings": 2,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 2,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 2,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Porsche": [
-      {
-        "date": "2026-11-12",
-        "listings": 1377,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1376,
-        "arrived": 42,
-        "sold": 43
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1388,
-        "arrived": 46,
-        "sold": 35
-      }
-    ],
-    "MG": [
-      {
-        "date": "2026-11-12",
-        "listings": 228,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 235,
-        "arrived": 9,
         "sold": 2
       },
       {
         "date": "2026-11-14",
-        "listings": 226,
-        "arrived": 2,
-        "sold": 11
-      }
-    ],
-    "Toyota": [
-      {
-        "date": "2026-11-12",
-        "listings": 5227,
-        "arrived": null,
-        "sold": null
+        "listings": 120,
+        "arrived": 3,
+        "sold": 6
       },
       {
-        "date": "2026-11-13",
-        "listings": 5249,
-        "arrived": 171,
-        "sold": 149
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 5273,
-        "arrived": 161,
-        "sold": 137
-      }
-    ],
-    "Daihatsu": [
-      {
-        "date": "2026-11-12",
-        "listings": 13,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 14,
+        "date": "2026-11-15",
+        "listings": 118,
         "arrived": 1,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 14,
-        "arrived": 0,
-        "sold": 0
+        "sold": 3
       }
     ],
-    "Fiat": [
+    "Kia": [
       {
         "date": "2026-11-12",
-        "listings": 21,
+        "listings": 448,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 21,
-        "arrived": 0,
-        "sold": 0
+        "listings": 443,
+        "arrived": 6,
+        "sold": 11
       },
       {
         "date": "2026-11-14",
-        "listings": 21,
-        "arrived": 0,
-        "sold": 0
+        "listings": 443,
+        "arrived": 4,
+        "sold": 4
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 444,
+        "arrived": 8,
+        "sold": 7
       }
     ],
-    "Scion": [
+    "Mercedes-Benz": [
       {
         "date": "2026-11-12",
-        "listings": 1,
+        "listings": 6192,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 1,
+        "listings": 6215,
+        "arrived": 178,
+        "sold": 155
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 6251,
+        "arrived": 188,
+        "sold": 151
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 6213,
+        "arrived": 114,
+        "sold": 152
+      }
+    ],
+    "Opel": [
+      {
+        "date": "2026-11-12",
+        "listings": 10,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 10,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 1,
+        "listings": 10,
+        "arrived": 1,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 10,
+        "arrived": 1,
+        "sold": 1
+      }
+    ],
+    "Lexus": [
+      {
+        "date": "2026-11-12",
+        "listings": 1710,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1728,
+        "arrived": 57,
+        "sold": 39
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1744,
+        "arrived": 61,
+        "sold": 45
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1739,
+        "arrived": 33,
+        "sold": 38
+      }
+    ],
+    "BRABUS": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 6,
+        "arrived": 1,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Cadillac": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 6,
         "arrived": 0,
         "sold": 0
       }
@@ -1019,26 +409,38 @@
         "listings": 947,
         "arrived": 22,
         "sold": 27
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 946,
+        "arrived": 23,
+        "sold": 24
       }
     ],
-    "Maserati": [
+    "Aston Martin": [
       {
         "date": "2026-11-12",
-        "listings": 211,
+        "listings": 34,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 211,
-        "arrived": 7,
-        "sold": 7
+        "listings": 33,
+        "arrived": 1,
+        "sold": 2
       },
       {
         "date": "2026-11-14",
-        "listings": 211,
-        "arrived": 6,
-        "sold": 6
+        "listings": 32,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 32,
+        "arrived": 0,
+        "sold": 0
       }
     ],
     "Citroen": [
@@ -1059,9 +461,67 @@
         "listings": 27,
         "arrived": 0,
         "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 27,
+        "arrived": 1,
+        "sold": 1
       }
     ],
-    "Renault": [
+    "Volkswagen": [
+      {
+        "date": "2026-11-12",
+        "listings": 2199,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 2219,
+        "arrived": 71,
+        "sold": 51
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 2242,
+        "arrived": 78,
+        "sold": 55
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 2221,
+        "arrived": 37,
+        "sold": 58
+      }
+    ],
+    "Luxgen": [
+      {
+        "date": "2026-11-12",
+        "listings": 447,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 444,
+        "arrived": 11,
+        "sold": 14
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 446,
+        "arrived": 19,
+        "sold": 17
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 451,
+        "arrived": 13,
+        "sold": 8
+      }
+    ],
+    "Proton": [
       {
         "date": "2026-11-12",
         "listings": 1,
@@ -1076,6 +536,272 @@
       },
       {
         "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Toyota": [
+      {
+        "date": "2026-11-12",
+        "listings": 5227,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 5249,
+        "arrived": 171,
+        "sold": 149
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 5273,
+        "arrived": 161,
+        "sold": 137
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 5253,
+        "arrived": 102,
+        "sold": 122
+      }
+    ],
+    "Audi": [
+      {
+        "date": "2026-11-12",
+        "listings": 1018,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1007,
+        "arrived": 13,
+        "sold": 24
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1012,
+        "arrived": 30,
+        "sold": 25
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1005,
+        "arrived": 18,
+        "sold": 25
+      }
+    ],
+    "Bentley": [
+      {
+        "date": "2026-11-12",
+        "listings": 112,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 111,
+        "arrived": 3,
+        "sold": 4
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 114,
+        "arrived": 6,
+        "sold": 3
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 117,
+        "arrived": 5,
+        "sold": 2
+      }
+    ],
+    "Abarth": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 13,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 13,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 12,
+        "arrived": 0,
+        "sold": 1
+      }
+    ],
+    "Peugeot": [
+      {
+        "date": "2026-11-12",
+        "listings": 137,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 143,
+        "arrived": 9,
+        "sold": 3
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 143,
+        "arrived": 4,
+        "sold": 4
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 143,
+        "arrived": 1,
+        "sold": 1
+      }
+    ],
+    "Daihatsu": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 14,
+        "arrived": 1,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 14,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 14,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Rolls-Royce": [
+      {
+        "date": "2026-11-12",
+        "listings": 59,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 61,
+        "arrived": 2,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 60,
+        "arrived": 1,
+        "sold": 2
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 60,
+        "arrived": 1,
+        "sold": 1
+      }
+    ],
+    "Mini": [
+      {
+        "date": "2026-11-12",
+        "listings": 507,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 505,
+        "arrived": 15,
+        "sold": 17
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 509,
+        "arrived": 17,
+        "sold": 13
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 504,
+        "arrived": 9,
+        "sold": 14
+      }
+    ],
+    "Porsche": [
+      {
+        "date": "2026-11-12",
+        "listings": 1377,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1376,
+        "arrived": 42,
+        "sold": 43
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1388,
+        "arrived": 46,
+        "sold": 35
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1379,
+        "arrived": 17,
+        "sold": 26
+      }
+    ],
+    "BYD": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
         "listings": 1,
         "arrived": 0,
         "sold": 0
@@ -1099,24 +825,36 @@
         "listings": 7,
         "arrived": 0,
         "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 7,
+        "arrived": 0,
+        "sold": 0
       }
     ],
-    "BYD": [
+    "Hummer": [
       {
         "date": "2026-11-12",
-        "listings": 1,
+        "listings": 9,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 1,
+        "listings": 9,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 1,
+        "listings": 8,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 8,
         "arrived": 0,
         "sold": 0
       }
@@ -1139,66 +877,142 @@
         "listings": 1699,
         "arrived": 33,
         "sold": 27
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1692,
+        "arrived": 25,
+        "sold": 32
       }
     ],
-    "Mazda": [
+    "Suzuki": [
       {
         "date": "2026-11-12",
-        "listings": 1274,
+        "listings": 495,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 1290,
-        "arrived": 42,
-        "sold": 26
+        "listings": 512,
+        "arrived": 25,
+        "sold": 8
       },
       {
         "date": "2026-11-14",
-        "listings": 1295,
-        "arrived": 41,
-        "sold": 36
+        "listings": 528,
+        "arrived": 27,
+        "sold": 11
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 527,
+        "arrived": 17,
+        "sold": 18
       }
     ],
-    "Cadillac": [
+    "MG": [
       {
         "date": "2026-11-12",
-        "listings": 6,
+        "listings": 228,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 6,
+        "listings": 235,
+        "arrived": 9,
+        "sold": 2
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 226,
+        "arrived": 2,
+        "sold": 11
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 225,
+        "arrived": 4,
+        "sold": 5
+      }
+    ],
+    "Ssangyong": [
+      {
+        "date": "2026-11-12",
+        "listings": 3,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 3,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 6,
+        "listings": 3,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 3,
         "arrived": 0,
         "sold": 0
       }
     ],
-    "Jeep": [
+    "Ineos": [
       {
         "date": "2026-11-12",
-        "listings": 28,
+        "listings": 2,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 27,
+        "listings": 2,
         "arrived": 0,
-        "sold": 1
+        "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 24,
-        "arrived": 1,
-        "sold": 4
+        "listings": 2,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 2,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Buick": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
       }
     ],
     "Foxtron": [
@@ -1219,64 +1033,114 @@
         "listings": 1,
         "arrived": 0,
         "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
       }
     ],
-    "Mercedes-Benz": [
+    "Morgan": [
       {
         "date": "2026-11-12",
-        "listings": 6192,
+        "listings": 1,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 6215,
-        "arrived": 178,
-        "sold": 155
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 6251,
-        "arrived": 188,
-        "sold": 151
-      }
-    ],
-    "Caterham": [
-      {
-        "date": "2026-11-12",
-        "listings": 3,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 3,
+        "listings": 1,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 2,
+        "listings": 1,
         "arrived": 0,
-        "sold": 1
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
       }
     ],
-    "Ssangyong": [
+    "CMC": [
       {
         "date": "2026-11-12",
-        "listings": 3,
+        "listings": 548,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 3,
+        "listings": 550,
+        "arrived": 13,
+        "sold": 11
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 554,
+        "arrived": 12,
+        "sold": 8
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 551,
+        "arrived": 9,
+        "sold": 12
+      }
+    ],
+    "Lamborghini": [
+      {
+        "date": "2026-11-12",
+        "listings": 118,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 122,
+        "arrived": 4,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 120,
+        "arrived": 3,
+        "sold": 5
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 117,
+        "arrived": 1,
+        "sold": 4
+      }
+    ],
+    "Asia": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
         "arrived": 0,
         "sold": 0
       },
       {
         "date": "2026-11-14",
-        "listings": 3,
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
         "arrived": 0,
         "sold": 0
       }
@@ -1299,126 +1163,194 @@
         "listings": 5,
         "arrived": 0,
         "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 6,
+        "arrived": 1,
+        "sold": 0
       }
     ],
-    "Jaguar": [
+    "BMW": [
       {
         "date": "2026-11-12",
-        "listings": 103,
+        "listings": 4702,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 102,
-        "arrived": 2,
-        "sold": 3
+        "listings": 4723,
+        "arrived": 130,
+        "sold": 109
       },
       {
         "date": "2026-11-14",
-        "listings": 104,
-        "arrived": 4,
-        "sold": 2
+        "listings": 4761,
+        "arrived": 143,
+        "sold": 105
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 4718,
+        "arrived": 96,
+        "sold": 139
       }
     ],
-    "Isuzu": [
+    "GMC": [
       {
         "date": "2026-11-12",
-        "listings": 89,
+        "listings": 1,
         "arrived": null,
         "sold": null
       },
       {
         "date": "2026-11-13",
-        "listings": 87,
-        "arrived": 2,
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "IVECO": [
+      {
+        "date": "2026-11-12",
+        "listings": 11,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 12,
+        "arrived": 1,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 12,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 12,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Smart": [
+      {
+        "date": "2026-11-12",
+        "listings": 75,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 72,
+        "arrived": 1,
         "sold": 4
       },
       {
         "date": "2026-11-14",
-        "listings": 87,
+        "listings": 71,
+        "arrived": 2,
+        "sold": 3
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 71,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Scion": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Subaru": [
+      {
+        "date": "2026-11-12",
+        "listings": 421,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 416,
+        "arrived": 8,
+        "sold": 13
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 419,
+        "arrived": 10,
+        "sold": 7
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 418,
+        "arrived": 7,
+        "sold": 8
+      }
+    ],
+    "Jeep": [
+      {
+        "date": "2026-11-12",
+        "listings": 28,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 27,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 24,
         "arrived": 1,
-        "sold": 1
-      }
-    ],
-    "Lotus": [
-      {
-        "date": "2026-11-12",
-        "listings": 13,
-        "arrived": null,
-        "sold": null
+        "sold": 4
       },
       {
-        "date": "2026-11-13",
-        "listings": 13,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 13,
-        "arrived": 0,
-        "sold": 0
-      }
-    ],
-    "Volkswagen": [
-      {
-        "date": "2026-11-12",
-        "listings": 2199,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 2219,
-        "arrived": 71,
-        "sold": 51
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 2242,
-        "arrived": 78,
-        "sold": 55
-      }
-    ],
-    "Hummer": [
-      {
-        "date": "2026-11-12",
-        "listings": 9,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 9,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 8,
-        "arrived": 0,
-        "sold": 1
-      }
-    ],
-    "Tobe": [
-      {
-        "date": "2026-11-12",
-        "listings": 1,
-        "arrived": null,
-        "sold": null
-      },
-      {
-        "date": "2026-11-13",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
-      },
-      {
-        "date": "2026-11-14",
-        "listings": 1,
-        "arrived": 0,
-        "sold": 0
+        "date": "2026-11-15",
+        "listings": 23,
+        "arrived": 1,
+        "sold": 2
       }
     ],
     "Nissan": [
@@ -1439,6 +1371,12 @@
         "listings": 1609,
         "arrived": 62,
         "sold": 46
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1606,
+        "arrived": 38,
+        "sold": 41
       }
     ],
     "Lincoln": [
@@ -1457,6 +1395,506 @@
       {
         "date": "2026-11-14",
         "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Mazda": [
+      {
+        "date": "2026-11-12",
+        "listings": 1274,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1290,
+        "arrived": 42,
+        "sold": 26
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1295,
+        "arrived": 41,
+        "sold": 36
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1291,
+        "arrived": 39,
+        "sold": 43
+      }
+    ],
+    "Renault": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Infiniti": [
+      {
+        "date": "2026-11-12",
+        "listings": 303,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 300,
+        "arrived": 4,
+        "sold": 7
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 293,
+        "arrived": 6,
+        "sold": 13
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 289,
+        "arrived": 4,
+        "sold": 8
+      }
+    ],
+    "Isuzu": [
+      {
+        "date": "2026-11-12",
+        "listings": 89,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 87,
+        "arrived": 2,
+        "sold": 4
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 87,
+        "arrived": 1,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 85,
+        "arrived": 0,
+        "sold": 2
+      }
+    ],
+    "Lotus": [
+      {
+        "date": "2026-11-12",
+        "listings": 13,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 13,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 13,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 13,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Jaguar": [
+      {
+        "date": "2026-11-12",
+        "listings": 103,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 102,
+        "arrived": 2,
+        "sold": 3
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 104,
+        "arrived": 4,
+        "sold": 2
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 99,
+        "arrived": 1,
+        "sold": 6
+      }
+    ],
+    "Land Rover": [
+      {
+        "date": "2026-11-12",
+        "listings": 457,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 459,
+        "arrived": 11,
+        "sold": 9
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 460,
+        "arrived": 10,
+        "sold": 9
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 457,
+        "arrived": 6,
+        "sold": 9
+      }
+    ],
+    "DFSK": [
+      {
+        "date": "2026-11-12",
+        "listings": 40,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 40,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 42,
+        "arrived": 2,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 42,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Caterham": [
+      {
+        "date": "2026-11-12",
+        "listings": 3,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 3,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 2,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 2,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Alfa Romeo": [
+      {
+        "date": "2026-11-12",
+        "listings": 32,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 33,
+        "arrived": 1,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 32,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 32,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Tobe": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "McLaren": [
+      {
+        "date": "2026-11-12",
+        "listings": 46,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 48,
+        "arrived": 3,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 51,
+        "arrived": 5,
+        "sold": 2
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 52,
+        "arrived": 1,
+        "sold": 0
+      }
+    ],
+    "Fiat": [
+      {
+        "date": "2026-11-12",
+        "listings": 21,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 21,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 21,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 22,
+        "arrived": 1,
+        "sold": 0
+      }
+    ],
+    "Honda": [
+      {
+        "date": "2026-11-12",
+        "listings": 1719,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 1755,
+        "arrived": 78,
+        "sold": 42
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 1774,
+        "arrived": 62,
+        "sold": 43
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 1759,
+        "arrived": 35,
+        "sold": 50
+      }
+    ],
+    "Saab": [
+      {
+        "date": "2026-11-12",
+        "listings": 6,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 5,
+        "arrived": 0,
+        "sold": 1
+      }
+    ],
+    "Chevrolet": [
+      {
+        "date": "2026-11-12",
+        "listings": 14,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 14,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 14,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 15,
+        "arrived": 1,
+        "sold": 0
+      }
+    ],
+    "Mahindra": [
+      {
+        "date": "2026-11-12",
+        "listings": 7,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 7,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 1
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 6,
+        "arrived": 0,
+        "sold": 0
+      }
+    ],
+    "Ford": [
+      {
+        "date": "2026-11-12",
+        "listings": 2008,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 2031,
+        "arrived": 62,
+        "sold": 39
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 2046,
+        "arrived": 69,
+        "sold": 54
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 2043,
+        "arrived": 37,
+        "sold": 40
+      }
+    ],
+    "Yueloong": [
+      {
+        "date": "2026-11-12",
+        "listings": 1,
+        "arrived": null,
+        "sold": null
+      },
+      {
+        "date": "2026-11-13",
+        "listings": 2,
+        "arrived": 1,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-14",
+        "listings": 2,
+        "arrived": 0,
+        "sold": 0
+      },
+      {
+        "date": "2026-11-15",
+        "listings": 2,
         "arrived": 0,
         "sold": 0
       }
@@ -1492,8 +1930,8 @@
     "Peugeot 寶獅\tPeugeot",
     "Hino 日野\tHino",
     "Ferrari 法拉利\tFerrari",
-    "Lamborghini 藍寶堅尼\tLamborghini",
     "Bentley 賓利\tBentley",
+    "Lamborghini 藍寶堅尼\tLamborghini",
     "Jaguar 捷豹\tJaguar",
     "Isuzu 五十鈴\tIsuzu",
     "Smart 智慧\tSmart",
@@ -1507,17 +1945,17 @@
     "Fiat 飛雅特\tFiat",
     "Chevrolet 雪佛蘭\tChevrolet",
     "Daihatsu 大發\tDaihatsu",
-    "Abarth 阿巴斯\tAbarth",
     "Lotus 蓮花\tLotus",
+    "Abarth 阿巴斯\tAbarth",
     "IVECO\tIVECO",
     "Opel 歐寶\tOpel",
     "Hummer 悍馬\tHummer",
     "Acura 謳歌\tAcura",
     "BRABUS 巴博斯\tBRABUS",
     "Cadillac 凱迪拉克\tCadillac",
+    "Dodge 道奇\tDodge",
     "Mahindra 馬欣德拉\tMahindra",
     "Saab 紳寶\tSaab",
-    "Dodge 道奇\tDodge",
     "Chrysler 克萊斯勒\tChrysler",
     "Ssangyong 雙龍\tSsangyong",
     "Caterham 凱特漢姆\tCaterham",
@@ -1683,13 +2121,13 @@
       "highlight": false
     },
     {
-      "brand": "Lamborghini",
-      "display": "Lamborghini 藍寶堅尼",
+      "brand": "Bentley",
+      "display": "Bentley 賓利",
       "highlight": false
     },
     {
-      "brand": "Bentley",
-      "display": "Bentley 賓利",
+      "brand": "Lamborghini",
+      "display": "Lamborghini 藍寶堅尼",
       "highlight": false
     },
     {
@@ -1758,13 +2196,13 @@
       "highlight": false
     },
     {
-      "brand": "Abarth",
-      "display": "Abarth 阿巴斯",
+      "brand": "Lotus",
+      "display": "Lotus 蓮花",
       "highlight": false
     },
     {
-      "brand": "Lotus",
-      "display": "Lotus 蓮花",
+      "brand": "Abarth",
+      "display": "Abarth 阿巴斯",
       "highlight": false
     },
     {
@@ -1798,6 +2236,11 @@
       "highlight": false
     },
     {
+      "brand": "Dodge",
+      "display": "Dodge 道奇",
+      "highlight": false
+    },
+    {
       "brand": "Mahindra",
       "display": "Mahindra 馬欣德拉",
       "highlight": false
@@ -1805,11 +2248,6 @@
     {
       "brand": "Saab",
       "display": "Saab 紳寶",
-      "highlight": false
-    },
-    {
-      "brand": "Dodge",
-      "display": "Dodge 道奇",
       "highlight": false
     },
     {
