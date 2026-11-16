@@ -18,7 +18,8 @@
     "下架暫定為銷售（以下架計）。物件可能因改價重刊、下架未售、過期或重複刊登而消失或再出現，累積數週資料後較接近真實流動速度。",
     "公路局廠牌會把英文名與中文在地廠名分開列（例如 TOYOTA 與國瑞）。本站已合併後再計算上架比。",
     "熱賣車型＝該車系在最近最多 30 日快照比較中，下架（銷售以下架計）次數最多者。車系已把 8891 的 kind 名稱合併到合理層級（例如 911 Carrera／911 GT3 算 911，C-Class Sedan／Estate 算 C-Class）。平均售價是這些下架物件最後一次在架價格的算術平均，已排除 0 元、面議與明顯不合理的佔位價格。同時列出該車系目前在架均價與在架台數。樣本小於 5 筆時會加註「樣本偏少」，並另列目前在架最多的車系當參考。",
-    "車型流通性與成交金額排行用同一個車系分組與下架定義。估計成交金額＝區間內下架台數 × 下架平均售價；30 日估計成交金額＝每日平均下架 × 30 × 下架平均售價，是把目前僅有數日的樣本外推，不是實際月成交。售出率＝下架台數 ÷ 區間平均在架數（另提供每日與 30 日換算）。面議與不合理價格不列入均價，有價格筆數可能少於下架台數。資料天數還很少時，排行會明顯波動。"
+    "車型流通性與成交金額排行用同一個車系分組與下架定義。估計成交金額＝區間內下架台數 × 下架平均售價；30 日估計成交金額＝每日平均下架 × 30 × 下架平均售價，是把目前僅有數日的樣本外推，不是實際月成交。售出率＝下架台數 ÷ 區間平均在架數（另提供每日與 30 日換算）。面議與不合理價格不列入均價，有價格筆數可能少於下架台數。資料天數還很少時，排行會明顯波動。",
+    "今日／5日／20日均線指標只使用實際已有的每日快照，不會回補缺日。視窗未滿期時以目前天數計算並標示。上架／下架平均不含沒有前日可比的第一天。在架差距未滿 1 台或未滿 1%、上架／下架差距未滿 10% 時標示為持平；升溫／降溫只表示相對均線的方向。"
   ],
   "scrape": {
     "advertised_total": 39359,
@@ -22569,6 +22570,3238 @@
         "arrived": 0,
         "sold": 1,
         "highlight": false
+      }
+    ]
+  },
+  "indicators": {
+    "windows": [
+      5,
+      20
+    ],
+    "history_days": 5,
+    "stock_days": 5,
+    "flow_days": 4,
+    "history_start": "2026-11-12",
+    "history_end": "2026-11-16",
+    "threshold_stock": 0.01,
+    "threshold_flow": 0.1,
+    "min_abs_stock": 1,
+    "min_abs_flow": 0.5,
+    "note": "5日、20日平均只使用實際已有的每日資料，不會回補或推估缺日。視窗未滿期時，以目前天數計算並標示，例如「20日（目前僅5天資料）」。上架／下架平均不含沒有前日可比的第一天。在架較均線差距未滿 1 台或未滿 1%、上架／下架差距未滿 10% 時標示為持平。升溫／降溫只表示數字相對均線的方向，不是好壞判斷。下架暫定為銷售（以下架計）。",
+    "market": {
+      "listings": {
+        "today": 39357,
+        "change": -320,
+        "ma5": {
+          "value": 39593.0,
+          "n": 5,
+          "complete": true,
+          "label": "5日"
+        },
+        "ma20": {
+          "value": 39593.0,
+          "n": 5,
+          "complete": false,
+          "label": "20日（目前僅5天資料）"
+        },
+        "vs_ma5": "持平",
+        "ma5_vs_ma20": null,
+        "trend": "持平"
+      },
+      "arrived": {
+        "today": 572,
+        "change": null,
+        "ma5": {
+          "value": 941.8,
+          "n": 4,
+          "complete": false,
+          "label": "5日（目前僅4天資料）"
+        },
+        "ma20": {
+          "value": 941.8,
+          "n": 4,
+          "complete": false,
+          "label": "20日（目前僅4天資料）"
+        },
+        "vs_ma5": "降溫",
+        "ma5_vs_ma20": null,
+        "trend": "降溫"
+      },
+      "sold": {
+        "today": 892,
+        "change": null,
+        "ma5": {
+          "value": 954.2,
+          "n": 4,
+          "complete": false,
+          "label": "5日（目前僅4天資料）"
+        },
+        "ma20": {
+          "value": 954.2,
+          "n": 4,
+          "complete": false,
+          "label": "20日（目前僅4天資料）"
+        },
+        "vs_ma5": "持平",
+        "ma5_vs_ma20": null,
+        "trend": "持平"
+      }
+    },
+    "porsche": {
+      "listings": {
+        "today": 1367,
+        "change": -12,
+        "ma5": {
+          "value": 1377.4,
+          "n": 5,
+          "complete": true,
+          "label": "5日"
+        },
+        "ma20": {
+          "value": 1377.4,
+          "n": 5,
+          "complete": false,
+          "label": "20日（目前僅5天資料）"
+        },
+        "vs_ma5": "持平",
+        "ma5_vs_ma20": null,
+        "trend": "持平"
+      },
+      "arrived": {
+        "today": 11,
+        "change": null,
+        "ma5": {
+          "value": 29.0,
+          "n": 4,
+          "complete": false,
+          "label": "5日（目前僅4天資料）"
+        },
+        "ma20": {
+          "value": 29.0,
+          "n": 4,
+          "complete": false,
+          "label": "20日（目前僅4天資料）"
+        },
+        "vs_ma5": "降溫",
+        "ma5_vs_ma20": null,
+        "trend": "降溫"
+      },
+      "sold": {
+        "today": 23,
+        "change": null,
+        "ma5": {
+          "value": 31.8,
+          "n": 4,
+          "complete": false,
+          "label": "5日（目前僅4天資料）"
+        },
+        "ma20": {
+          "value": 31.8,
+          "n": 4,
+          "complete": false,
+          "label": "20日（目前僅4天資料）"
+        },
+        "vs_ma5": "降溫",
+        "ma5_vs_ma20": null,
+        "trend": "降溫"
+      }
+    },
+    "brands": [
+      {
+        "brand": "Mercedes-Benz",
+        "display": "Mercedes-Benz 賓士",
+        "highlight": false,
+        "arrived": {
+          "today": 76,
+          "change": null,
+          "ma5": {
+            "value": 139.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 139.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 130,
+          "change": null,
+          "ma5": {
+            "value": 147.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 147.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Toyota",
+        "display": "Toyota 豐田",
+        "highlight": false,
+        "arrived": {
+          "today": 87,
+          "change": null,
+          "ma5": {
+            "value": 130.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 130.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 114,
+          "change": null,
+          "ma5": {
+            "value": 130.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 130.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "BMW",
+        "display": "BMW 寶馬",
+        "highlight": false,
+        "arrived": {
+          "today": 63,
+          "change": null,
+          "ma5": {
+            "value": 108.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 108.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 121,
+          "change": null,
+          "ma5": {
+            "value": 118.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 118.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Volkswagen",
+        "display": "Volkswagen 福斯",
+        "highlight": false,
+        "arrived": {
+          "today": 36,
+          "change": null,
+          "ma5": {
+            "value": 55.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 55.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 54,
+          "change": null,
+          "ma5": {
+            "value": 54.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 54.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Honda",
+        "display": "Honda 本田",
+        "highlight": false,
+        "arrived": {
+          "today": 22,
+          "change": null,
+          "ma5": {
+            "value": 49.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 49.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 41,
+          "change": null,
+          "ma5": {
+            "value": 44.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 44.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Ford",
+        "display": "Ford 福特",
+        "highlight": false,
+        "arrived": {
+          "today": 25,
+          "change": null,
+          "ma5": {
+            "value": 48.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 48.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 40,
+          "change": null,
+          "ma5": {
+            "value": 43.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 43.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Nissan",
+        "display": "Nissan 日產",
+        "highlight": false,
+        "arrived": {
+          "today": 28,
+          "change": null,
+          "ma5": {
+            "value": 48.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 48.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 35,
+          "change": null,
+          "ma5": {
+            "value": 41.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 41.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Lexus",
+        "display": "Lexus 凌志",
+        "highlight": false,
+        "arrived": {
+          "today": 27,
+          "change": null,
+          "ma5": {
+            "value": 44.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 44.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 40,
+          "change": null,
+          "ma5": {
+            "value": 40.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 40.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Mitsubishi",
+        "display": "Mitsubishi 三菱",
+        "highlight": false,
+        "arrived": {
+          "today": 26,
+          "change": null,
+          "ma5": {
+            "value": 32.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 32.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 41,
+          "change": null,
+          "ma5": {
+            "value": 35.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 35.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Mazda",
+        "display": "Mazda 馬自達",
+        "highlight": false,
+        "arrived": {
+          "today": 20,
+          "change": null,
+          "ma5": {
+            "value": 35.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 35.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 33,
+          "change": null,
+          "ma5": {
+            "value": 34.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 34.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Porsche",
+        "display": "Porsche 保時捷",
+        "highlight": true,
+        "arrived": {
+          "today": 11,
+          "change": null,
+          "ma5": {
+            "value": 29.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 29.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 23,
+          "change": null,
+          "ma5": {
+            "value": 31.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 31.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Hyundai",
+        "display": "Hyundai 現代",
+        "highlight": false,
+        "arrived": {
+          "today": 10,
+          "change": null,
+          "ma5": {
+            "value": 30.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 30.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 23,
+          "change": null,
+          "ma5": {
+            "value": 26.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 26.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Volvo",
+        "display": "Volvo 富豪",
+        "highlight": false,
+        "arrived": {
+          "today": 22,
+          "change": null,
+          "ma5": {
+            "value": 23.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 23.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 27,
+          "change": null,
+          "ma5": {
+            "value": 24.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 24.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Audi",
+        "display": "Audi 奧迪",
+        "highlight": false,
+        "arrived": {
+          "today": 7,
+          "change": null,
+          "ma5": {
+            "value": 17.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 17.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 15,
+          "change": null,
+          "ma5": {
+            "value": 22.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 22.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Suzuki",
+        "display": "Suzuki 鈴木",
+        "highlight": false,
+        "arrived": {
+          "today": 12,
+          "change": null,
+          "ma5": {
+            "value": 20.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 20.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 22,
+          "change": null,
+          "ma5": {
+            "value": 14.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 14.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Skoda",
+        "display": "Skoda 司科達",
+        "highlight": false,
+        "arrived": {
+          "today": 15,
+          "change": null,
+          "ma5": {
+            "value": 15.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 15.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 15,
+          "change": null,
+          "ma5": {
+            "value": 14.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 14.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Tesla",
+        "display": "Tesla 特斯拉",
+        "highlight": false,
+        "arrived": {
+          "today": 5,
+          "change": null,
+          "ma5": {
+            "value": 14.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 14.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 4,
+          "change": null,
+          "ma5": {
+            "value": 13.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 13.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Mini",
+        "display": "Mini 迷你",
+        "highlight": false,
+        "arrived": {
+          "today": 9,
+          "change": null,
+          "ma5": {
+            "value": 12.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 12.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 10,
+          "change": null,
+          "ma5": {
+            "value": 13.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 13.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Luxgen",
+        "display": "Luxgen 納智捷",
+        "highlight": false,
+        "arrived": {
+          "today": 16,
+          "change": null,
+          "ma5": {
+            "value": 14.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 14.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 14,
+          "change": null,
+          "ma5": {
+            "value": 13.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 13.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "CMC",
+        "display": "CMC 中華汽車",
+        "highlight": false,
+        "arrived": {
+          "today": 13,
+          "change": null,
+          "ma5": {
+            "value": 11.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 11.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 15,
+          "change": null,
+          "ma5": {
+            "value": 11.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 11.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Infiniti",
+        "display": "Infiniti 極致",
+        "highlight": false,
+        "arrived": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 4.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 4.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 9,
+          "change": null,
+          "ma5": {
+            "value": 9.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 9.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Land Rover",
+        "display": "Land Rover 荒原路華",
+        "highlight": false,
+        "arrived": {
+          "today": 9,
+          "change": null,
+          "ma5": {
+            "value": 9.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 9.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 7,
+          "change": null,
+          "ma5": {
+            "value": 8.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 8.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Subaru",
+        "display": "Subaru 速霸陸",
+        "highlight": false,
+        "arrived": {
+          "today": 4,
+          "change": null,
+          "ma5": {
+            "value": 7.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 7.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 6,
+          "change": null,
+          "ma5": {
+            "value": 8.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 8.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Kia",
+        "display": "Kia 起亞",
+        "highlight": false,
+        "arrived": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 5.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 5.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 10,
+          "change": null,
+          "ma5": {
+            "value": 8.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 8.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "MG",
+        "display": "MG 名爵",
+        "highlight": false,
+        "arrived": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 4.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 4.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 8,
+          "change": null,
+          "ma5": {
+            "value": 6.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 6.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Maserati",
+        "display": "Maserati 瑪莎拉蒂",
+        "highlight": false,
+        "arrived": {
+          "today": 6,
+          "change": null,
+          "ma5": {
+            "value": 5.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 5.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 5,
+          "change": null,
+          "ma5": {
+            "value": 5.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 5.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Hino",
+        "display": "Hino 日野",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 1.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 3.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Bentley",
+        "display": "Bentley 賓利",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 3.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 4,
+          "change": null,
+          "ma5": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Peugeot",
+        "display": "Peugeot 寶獅",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 3.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 5,
+          "change": null,
+          "ma5": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Ferrari",
+        "display": "Ferrari 法拉利",
+        "highlight": false,
+        "arrived": {
+          "today": 4,
+          "change": null,
+          "ma5": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Jaguar",
+        "display": "Jaguar 捷豹",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 3.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Lamborghini",
+        "display": "Lamborghini 藍寶堅尼",
+        "highlight": false,
+        "arrived": {
+          "today": 5,
+          "change": null,
+          "ma5": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 3.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 2.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Isuzu",
+        "display": "Isuzu 五十鈴",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 3,
+          "change": null,
+          "ma5": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Smart",
+        "display": "Smart 智慧",
+        "highlight": false,
+        "arrived": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 1.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Jeep",
+        "display": "Jeep 吉普",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Citroen",
+        "display": "Citroen 雪鐵龍",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 0.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 1.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "McLaren",
+        "display": "McLaren 麥拉倫",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 2.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Aston Martin",
+        "display": "Aston Martin 奧斯頓馬丁",
+        "highlight": false,
+        "arrived": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Rolls-Royce",
+        "display": "Rolls-Royce 勞斯萊斯",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 1.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.8,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.8,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Opel",
+        "display": "Opel 歐寶",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        }
+      },
+      {
+        "brand": "Alfa Romeo",
+        "display": "Alfa Romeo 愛快羅密歐",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "BRABUS",
+        "display": "BRABUS 巴博斯",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Fiat",
+        "display": "Fiat 飛雅特",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 2,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Abarth",
+        "display": "Abarth 阿巴斯",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Caterham",
+        "display": "Caterham 凱特漢姆",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Foxtron",
+        "display": "Foxtron 鴻華",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 1,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "升溫",
+          "ma5_vs_ma20": null,
+          "trend": "升溫"
+        }
+      },
+      {
+        "brand": "Hummer",
+        "display": "Hummer 悍馬",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Mahindra",
+        "display": "Mahindra 馬欣德拉",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Saab",
+        "display": "Saab 紳寶",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "DFSK",
+        "display": "DFSK 東風小康",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.5,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "降溫",
+          "ma5_vs_ma20": null,
+          "trend": "降溫"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Chevrolet",
+        "display": "Chevrolet 雪佛蘭",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Daihatsu",
+        "display": "Daihatsu 大發",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Dodge",
+        "display": "Dodge 道奇",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "IVECO",
+        "display": "IVECO",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Yueloong",
+        "display": "Yueloong 裕隆",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.2,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Acura",
+        "display": "Acura 謳歌",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Asia",
+        "display": "Asia 亞細亞",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "BYD",
+        "display": "BYD 比亞迪",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Buick",
+        "display": "Buick 別克",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Cadillac",
+        "display": "Cadillac 凱迪拉克",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Chrysler",
+        "display": "Chrysler 克萊斯勒",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Foton",
+        "display": "Foton 福田",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "GMC",
+        "display": "GMC",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Ineos",
+        "display": "Ineos 英奈斯",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Lincoln",
+        "display": "Lincoln 林肯",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Lotus",
+        "display": "Lotus 蓮花",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Morgan",
+        "display": "Morgan 摩根",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Proton",
+        "display": "Proton 寶騰",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Renault",
+        "display": "Renault 雷諾",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Scion",
+        "display": "Scion",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Ssangyong",
+        "display": "Ssangyong 雙龍",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
+      },
+      {
+        "brand": "Tobe",
+        "display": "Tobe 酷比",
+        "highlight": false,
+        "arrived": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        },
+        "sold": {
+          "today": 0,
+          "change": null,
+          "ma5": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "5日（目前僅4天資料）"
+          },
+          "ma20": {
+            "value": 0.0,
+            "n": 4,
+            "complete": false,
+            "label": "20日（目前僅4天資料）"
+          },
+          "vs_ma5": "持平",
+          "ma5_vs_ma20": null,
+          "trend": "持平"
+        }
       }
     ]
   }

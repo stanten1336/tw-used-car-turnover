@@ -120,6 +120,22 @@
     .callout.plain {
       background: var(--card); border: 1px solid var(--line);
     }
+
+    .ma-block { margin: 18px 0 0; }
+    .ma-block h3 { font-size: 16px; margin: 0 0 8px; }
+    .trend {
+      display: inline-block; padding: 1px 8px; border-radius: 999px;
+      font-size: 12px; font-weight: 700; letter-spacing: .04em; white-space: nowrap;
+    }
+    .trend.up { background: rgba(63,166,107,.18); color: #8fd4a8; border: 1px solid rgba(63,166,107,.4); }
+    .trend.down { background: var(--accent-soft); color: #f0a3a8; border: 1px solid rgba(230,49,60,.4); }
+    .trend.flat { background: rgba(156,151,140,.14); color: #c9c3b6; border: 1px solid var(--line); }
+    .trend.mixed { background: rgba(201,162,39,.16); color: #e6c86a; border: 1px solid rgba(201,162,39,.35); }
+    .ma-table td small, .ma-table th small {
+      display: block; color: var(--muted); font-weight: 400; font-size: 11px; margin-top: 2px;
+    }
+    .today-sub { color: var(--muted); font-size: 12px; font-weight: 400; margin-top: 2px; }
+
     @media (max-width: 720px) {
       .metric .v { font-size: 22px; }
       th, td { padding: 8px 10px; }
@@ -138,6 +154,7 @@
   <div id="error" class="error wrap" hidden></div>
   <div class="wrap">
     <section id="summary"></section>
+    <section id="indicators"></section>
     <section id="hot"></section>
     <section id="liquidity"></section>
     <section id="table"></section>
@@ -783,10 +800,115 @@
         <ul class="notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>`;
     }
 
+
+    function fmtAvg(ma) {
+      if (!ma || ma.value == null || ma.value === "") return "—";
+      const n = Number(ma.value);
+      if (!Number.isFinite(n)) return "—";
+      const text = n.toLocaleString("zh-TW", { maximumFractionDigits: 1, minimumFractionDigits: 0 });
+      if (ma.complete) return text;
+      return `${text}<small>目前僅${esc(ma.n)}天資料</small>`;
+    }
+    function fmtTodayVal(metric, withChange) {
+      if (!metric || metric.today == null) return "—";
+      let s = fmtN(metric.today);
+      if (withChange && metric.change != null) {
+        const ch = Number(metric.change);
+        if (ch === 0) s += `<div class="today-sub">較昨日持平</div>`;
+        else s += `<div class="today-sub">較昨日 ${ch > 0 ? "＋" : "−"}${fmtN(Math.abs(ch))}</div>`;
+      }
+      return s;
+    }
+    function trendBadge(label) {
+      if (!label) return `<span class="dash">—</span>`;
+      let cls = "flat";
+      if (label === "升溫") cls = "up";
+      else if (label === "降溫") cls = "down";
+      else if (label === "短升長降" || label === "短降長升") cls = "mixed";
+      return `<span class="trend ${cls}">${esc(label)}</span>`;
+    }
+    function maRow(label, metric, withChange) {
+      if (!metric) return "";
+      return `<tr>
+        <td>${esc(label)}</td>
+        <td class="num">${fmtTodayVal(metric, withChange)}</td>
+        <td class="num">${fmtAvg(metric.ma5)}</td>
+        <td class="num">${fmtAvg(metric.ma20)}</td>
+        <td>${trendBadge(metric.trend)}</td>
+      </tr>`;
+    }
+    function maTable(title, block, highlight) {
+      if (!block) return "";
+      return `
+        <div class="ma-block">
+          <h3>${esc(title)}</h3>
+          <div class="table-wrap${highlight ? " porsche-wrap" : ""}"><table class="ma-table">
+            <thead><tr>
+              <th>指標</th>
+              <th class="num">今日</th>
+              <th class="num">5日平均</th>
+              <th class="num">20日平均</th>
+              <th>動向</th>
+            </tr></thead>
+            <tbody>
+              ${maRow("在架台數", block.listings, true)}
+              ${maRow("新上架", block.arrived, false)}
+              ${maRow("下架（銷售以下架計）", block.sold, false)}
+            </tbody>
+          </table></div>
+        </div>`;
+    }
+    function renderIndicators() {
+      const ind = DATA.indicators;
+      const el = $("indicators");
+      if (!el) return;
+      if (!ind || !ind.market) { el.innerHTML = ""; return; }
+      const start = (ind.history_start || "").replace(/-/g, "/");
+      const end = (ind.history_end || "").replace(/-/g, "/");
+      const brandRows = (ind.brands || []).map((r) => {
+        const cls = r.highlight ? " class=\"porsche\"" : "";
+        return `<tr${cls}>
+          <td>${esc(r.display)}</td>
+          <td class="num">${fmtTodayVal(r.arrived, false)}</td>
+          <td class="num">${fmtAvg(r.arrived && r.arrived.ma5)}</td>
+          <td class="num">${fmtAvg(r.arrived && r.arrived.ma20)}</td>
+          <td>${trendBadge(r.arrived && r.arrived.trend)}</td>
+          <td class="num">${fmtTodayVal(r.sold, false)}</td>
+          <td class="num">${fmtAvg(r.sold && r.sold.ma5)}</td>
+          <td class="num">${fmtAvg(r.sold && r.sold.ma20)}</td>
+          <td>${trendBadge(r.sold && r.sold.trend)}</td>
+        </tr>`;
+      }).join("");
+      el.innerHTML = `
+        <h2>今日／5日／20日</h2>
+        <p class="cap">像看均線一樣，每個指標並陳今日、5日平均與20日平均。資料自 ${esc(start || "—")} 起累積，目前共 ${fmtN(ind.history_days)} 天；在架平均有 ${fmtN(ind.stock_days)} 天，上架／下架平均有 ${fmtN(ind.flow_days)} 天（第一天沒有前日可比）。視窗未滿期時以現有天數計算並在格子標示，不會回補缺日。在架差距未滿 1 台或未滿 1%、上架／下架差距未滿 10% 時標示為持平。動向看今日對5日、以及5日對20日（資料夠長才比較）。下架暫定為銷售（以下架計）。</p>
+        ${maTable("全市場", ind.market, false)}
+        ${maTable("保時捷", ind.porsche, true)}
+        <div class="ma-block">
+          <h3>各品牌每日上架與下架</h3>
+          <p class="cap">依 5 日平均下架由多到少排列，保時捷以紅色列標出。</p>
+          <div class="table-wrap"><table class="ma-table">
+            <thead><tr>
+              <th>品牌</th>
+              <th class="num">今日上架</th>
+              <th class="num">5日上架</th>
+              <th class="num">20日上架</th>
+              <th>上架動向</th>
+              <th class="num">今日下架</th>
+              <th class="num">5日下架</th>
+              <th class="num">20日下架</th>
+              <th>下架動向</th>
+            </tr></thead>
+            <tbody>${brandRows}</tbody>
+          </table></div>
+        </div>`;
+    }
+
     function render() {
       if (!DATA) return;
       renderMeta();
       renderSummary();
+      renderIndicators();
       renderHot();
       renderLiquidity();
       renderTable();
